@@ -7,32 +7,38 @@
 //
 
 import WatchKit
+import UIKit
 import Foundation
-
 
 class InterfaceController: WKInterfaceController {
 
     @IBOutlet var quarterImage: WKInterfaceImage!
+    @IBOutlet var label: WKInterfaceLabel!
     
     @IBAction func flipButtonPressed() {
-        let images = [UIImage(named: "head"), UIImage(named: "tail")]
+        quarterImage.setHidden(false)
+        let images = ["head", "tail"]
+        self.label.setText("Flipping...")
         
-        quarterImage.setImage(images[Int.random(in: 0...1)])
+        animate(withDuration: 0.5) {
+            guard let element = images.randomElement() else { return }
+            self.label.setText("\(element.capitalized)s")
+            self.quarterImage.setImageNamed(element)
+        }
     }
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
-        // Configure interface objects here.
     }
     
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
+        self.label.setText("")
+        quarterImage.setHidden(true)
+
         super.willActivate()
     }
     
     override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
 
