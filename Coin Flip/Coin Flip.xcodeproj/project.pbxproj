@@ -411,14 +411,14 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7JT2JB89AV;
+				DEVELOPMENT_TEAM = VGWP68MD86;
 				INFOPLIST_FILE = "Coin Flip WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jacobrozell.headsOrTails.Coin-Flip.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jacob.coin-flip.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
@@ -435,14 +435,14 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7JT2JB89AV;
+				DEVELOPMENT_TEAM = VGWP68MD86;
 				INFOPLIST_FILE = "Coin Flip WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jacobrozell.headsOrTails.Coin-Flip.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jacob.coin-flip.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
@@ -460,10 +460,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7JT2JB89AV;
+				DEVELOPMENT_TEAM = VGWP68MD86;
 				IBSC_MODULE = Coin_Flip_WatchKit_Extension;
 				INFOPLIST_FILE = "Coin Flip WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jacobrozell.headsOrTails.Coin-Flip.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jacob.coin-flip.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -480,10 +480,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7JT2JB89AV;
+				DEVELOPMENT_TEAM = VGWP68MD86;
 				IBSC_MODULE = Coin_Flip_WatchKit_Extension;
 				INFOPLIST_FILE = "Coin Flip WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jacobrozell.headsOrTails.Coin-Flip.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jacob.coin-flip.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -499,10 +499,10 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7JT2JB89AV;
+				DEVELOPMENT_TEAM = VGWP68MD86;
 				ENABLE_HARDENED_RUNTIME = NO;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jacobrozell.headsOrTails.Coin-Flip";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jacob.coin-flip";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -512,13 +512,13 @@
 		360C871723B28D45007D72BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = VGWP68MD86;
 				ENABLE_HARDENED_RUNTIME = NO;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jacobrozell.headsCoin-Flip";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jacob.coin-flip";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
