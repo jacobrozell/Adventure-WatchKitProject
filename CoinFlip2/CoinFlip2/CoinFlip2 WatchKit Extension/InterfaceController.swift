@@ -69,8 +69,9 @@ class InterfaceController: WKInterfaceController {
 
     func animateImages() {
         //quarterImage.startAnimating()
-        quarterImage.startAnimatingWithImages(in: NSRange(location: 0, length: length), duration: 2.0, repeatCount: 1)
+        quarterImage.startAnimatingWithImages(in: NSRange(location: 0, length: length), duration: 1.0, repeatCount: 1)
         
+        currentSide = nextSide
         self.label.setText("\(currentSide.rawValue)")
     }
 }
