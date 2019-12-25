@@ -12,37 +12,37 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet var flipButton: WKInterfaceButton!
     @IBOutlet var label: WKInterfaceLabel!
     @IBOutlet var quarterImage: WKInterfaceImage!
     
     @IBAction func flipButtonPressed() {
-        quarterImage.setHidden(false)
-        let images = ["head", "tail"]
-        
-        animate(withDuration: 0.5) {
-            guard let element = images.randomElement() else { return }
-            self.label.setText("\(element.capitalized)s")
-            self.quarterImage.setImageNamed(element)
-        }
+        flip()
     }
 
-    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
     }
     
     override func willActivate() {
-        self.label.setText("")
-        quarterImage.setHidden(true)
-
         super.willActivate()
     }
     
     override func didDeactivate() {
-        self.label.setText("")
-        quarterImage.setHidden(true)
-        
         super.didDeactivate()
+    }
+    
+    func flip() {
+        let images = ["head", "tail"]
+        
+        animate(withDuration: 1.0) {
+            guard let element = images.randomElement() else { return }
+            self.flipButton.setHidden(false)
+            self.quarterImage.setHidden(false)
+            
+            self.label.setText("\(element.capitalized)s")
+            self.quarterImage.setImageNamed(element)
+        }
     }
 
 }

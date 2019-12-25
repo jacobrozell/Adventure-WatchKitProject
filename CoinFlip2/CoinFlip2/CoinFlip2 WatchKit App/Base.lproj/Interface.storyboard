@@ -24,6 +24,7 @@
                         </button>
                     </items>
                     <connections>
+                        <outlet property="flipButton" destination="mzT-nC-q05" id="LJP-Sy-fyd"/>
                         <outlet property="label" destination="m1a-6b-R0y" id="Swv-eO-ZD6"/>
                         <outlet property="quarterImage" destination="XTi-Pc-PUB" id="GYY-ZF-ca8"/>
                     </connections>
