@@ -14,7 +14,7 @@
                         <label width="1" height="25" alignment="left" text="Heads" textAlignment="center" id="m1a-6b-R0y">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </label>
-                        <imageView width="1" height="75" alignment="left" image="head" contentMode="scaleAspectFit" id="XTi-Pc-PUB">
+                        <imageView width="1" height="75" alignment="left" image="ht1" contentMode="scaleAspectFit" initiallyAnimated="NO" animationDuration="1" id="XTi-Pc-PUB">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </imageView>
                         <button width="1" height="50" alignment="left" title="Flip" id="mzT-nC-q05">
@@ -65,6 +65,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="head" width="369" height="363"/>
+        <image name="ht1" width="390" height="196"/>
     </resources>
 </document>
