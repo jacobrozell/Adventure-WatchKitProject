@@ -33,6 +33,7 @@ class InterfaceController: WKInterfaceController {
     
     var direction: Direction = .headsToTails
     var length: Int = 6
+    var duration = 1.0
     
     @IBAction func flipButtonPressed() {
         flip()
@@ -51,15 +52,19 @@ class InterfaceController: WKInterfaceController {
         switch direction {
         case .tailsToHeads:
             length = 6
+            duration = 0.5
             break
         case .headsToHeads:
             length = 11
+            duration = 1.0
             break
         case .headsToTails:
             length = 6
+            duration = 0.5
             break
         case .tailsToTails:
             length = 11
+            duration = 1.0
             break
         }
         
@@ -69,7 +74,7 @@ class InterfaceController: WKInterfaceController {
 
     func animateImages() {
         //quarterImage.startAnimating()
-        quarterImage.startAnimatingWithImages(in: NSRange(location: 0, length: length), duration: 1.0, repeatCount: 1)
+        quarterImage.startAnimatingWithImages(in: NSRange(location: 0, length: length), duration: duration, repeatCount: 1)
         
         currentSide = nextSide
         self.label.setText("\(currentSide.rawValue)")
