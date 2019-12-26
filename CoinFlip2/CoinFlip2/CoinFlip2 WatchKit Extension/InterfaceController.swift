@@ -49,6 +49,12 @@ class InterfaceController: WKInterfaceController {
             direction = nextSide == .heads ? .tailsToHeads : .tailsToTails
         }
         
+        setupAnimations()
+        animateImages()
+    }
+    
+    /// Calculates duration and how many frames will be in the animation
+    func setupAnimations() {
         switch direction {
         case .tailsToHeads:
             length = 6
@@ -68,12 +74,11 @@ class InterfaceController: WKInterfaceController {
             break
         }
         
+        // Setup which animation will show
         quarterImage.setImageNamed(direction.rawValue)
-        animateImages()
     }
 
     func animateImages() {
-        //quarterImage.startAnimating()
         quarterImage.startAnimatingWithImages(in: NSRange(location: 0, length: length), duration: duration, repeatCount: 1)
         
         currentSide = nextSide
