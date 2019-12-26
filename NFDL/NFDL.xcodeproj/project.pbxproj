@@ -15,7 +15,7 @@
 		36A530D723B54B01003D54EE /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A530D623B54B01003D54EE /* ExtensionDelegate.swift */; };
 		36A530D923B54B01003D54EE /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A530D823B54B01003D54EE /* NotificationController.swift */; };
 		36A530DB23B54B02003D54EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36A530DA23B54B02003D54EE /* Assets.xcassets */; };
-		36A530EC23B54B0D003D54EE /* nfdl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 36A530EB23B54B0D003D54EE /* nfdl.mp3 */; };
+		36A530EE23B550B2003D54EE /* nfdl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 36A530ED23B550B2003D54EE /* nfdl.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +73,7 @@
 		36A530DA23B54B02003D54EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36A530DC23B54B02003D54EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36A530DD23B54B02003D54EE /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		36A530EB23B54B0D003D54EE /* nfdl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = nfdl.mp3; path = "../../PlayingSounds/PlayingSounds WatchKit Extension/nfdl.mp3"; sourceTree = "<group>"; };
+		36A530ED23B550B2003D54EE /* nfdl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nfdl.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +119,7 @@
 		36A530D323B54B01003D54EE /* NFDL WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				36A530EB23B54B0D003D54EE /* nfdl.mp3 */,
+				36A530ED23B550B2003D54EE /* nfdl.mp3 */,
 				36A530D423B54B01003D54EE /* InterfaceController.swift */,
 				36A530D623B54B01003D54EE /* ExtensionDelegate.swift */,
 				36A530D823B54B01003D54EE /* NotificationController.swift */,
@@ -246,8 +246,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36A530EC23B54B0D003D54EE /* nfdl.mp3 in Resources */,
 				36A530DB23B54B02003D54EE /* Assets.xcassets in Resources */,
+				36A530EE23B550B2003D54EE /* nfdl.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
