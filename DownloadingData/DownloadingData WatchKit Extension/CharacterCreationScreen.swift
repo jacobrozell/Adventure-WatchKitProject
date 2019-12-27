@@ -30,7 +30,7 @@ class CharacterCreationScreen: WKInterfaceController {
     }
     
     func chooseClass(with pClass: PlayableClass) {
-        self.presentAlert(withTitle: "\(pClass.rawValue) Selected!", message: "Are you sure?", preferredStyle: .alert, actions: [WKAlertAction(title: "Yes", style: .default, handler: {
+        self.presentAlert(withTitle: "\(pClass.rawValue.capitalized) Selected!", message: "Are you sure?", preferredStyle: .alert, actions: [WKAlertAction(title: "Yes", style: .default, handler: {
             
             self.playerClass = pClass
             print("\(pClass.rawValue.capitalized) selected")
