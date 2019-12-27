@@ -50,7 +50,11 @@ class LoadingScreen: WKInterfaceController {
         if screenFeed != nil {
             presentAlert(withTitle: "Download Data Complete!", message: "", preferredStyle: .alert, actions: [WKAlertAction(title: "Okay", style: .default, handler: {
                 // go to character screen
-                self.pushController(withName: "characterCreationScreen", context: nil)
+                
+                let rootControllerIdentifier = "characterCreationScreen"
+                WKInterfaceController.reloadRootControllers(withNamesAndContexts: [(name: rootControllerIdentifier, context: [:] as AnyObject)])
+                
+                self.pushController(withName: rootControllerIdentifier, context: nil)
             })])
         } else {
             presentAlert(withTitle: "Download Data Failed!", message: "Check Internet Connection", preferredStyle: .alert, actions: [WKAlertAction(title: "Try Again", style: .default, handler: {

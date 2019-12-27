@@ -32,8 +32,8 @@ class CharacterCreationScreen: WKInterfaceController {
     func chooseClass(with pClass: PlayableClass) {
         self.presentAlert(withTitle: "\(pClass.rawValue) Selected!", message: "Are you sure?", preferredStyle: .alert, actions: [WKAlertAction(title: "Yes", style: .default, handler: {
             
-            //self.playerClass = pClass
-            print("\(pClass.rawValue) selected")
+            self.playerClass = pClass
+            print("\(pClass.rawValue.capitalized) selected")
             
         }), WKAlertAction(title: "No", style: .cancel, handler: {
             return
@@ -42,8 +42,7 @@ class CharacterCreationScreen: WKInterfaceController {
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        let rootControllerIdentifier = "characterCreationScreen"
-        WKInterfaceController.reloadRootControllers(withNamesAndContexts: [(name: rootControllerIdentifier, context: [:] as AnyObject)])
+
     }
     
     override func willActivate() {
@@ -53,5 +52,4 @@ class CharacterCreationScreen: WKInterfaceController {
     override func didDeactivate() {
         super.didDeactivate()
     }
-
 }
