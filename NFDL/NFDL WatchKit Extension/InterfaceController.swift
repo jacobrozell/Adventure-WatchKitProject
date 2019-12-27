@@ -13,6 +13,7 @@ import AVFoundation
 
 class InterfaceController: WKInterfaceController {
     var player = AVAudioPlayer()
+    var volume: Float = 1.0
     @IBOutlet var image: WKInterfaceImage!
     @IBOutlet var playButton: WKInterfaceButton!
     
@@ -24,7 +25,7 @@ class InterfaceController: WKInterfaceController {
         }
         guard let soundPath = Bundle.main.path(forResource: "nfdl", ofType: "mp3") else { return }
         let soundPathURL = URL(fileURLWithPath: soundPath)
-
+        
         image.setImageNamed("f")
         
         do {
@@ -36,7 +37,5 @@ class InterfaceController: WKInterfaceController {
         } catch {
             print(error)
         }
-        
-
     }
 }

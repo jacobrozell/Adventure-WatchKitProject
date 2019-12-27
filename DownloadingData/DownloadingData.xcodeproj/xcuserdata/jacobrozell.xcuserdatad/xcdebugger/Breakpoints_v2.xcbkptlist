@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "ED1F0479-D791-4CE2-8C07-17659268E406"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B488ABCC-1FEE-4DCF-9BD1-482F6A85AF71"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DownloadingData WatchKit Extension/CharacterCreationScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "chooseClass(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B488ABCC-1FEE-4DCF-9BD1-482F6A85AF71 - 7f60c13b450e3fa3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DownloadingData_WatchKit_Extension.CharacterCreationScreen.chooseClass(with: DownloadingData_WatchKit_Extension.PlayableClass) -&gt; ()"
+                  moduleName = "DownloadingData WatchKit Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacobrozell/Desktop/WatchOS/DownloadingData/DownloadingData%20WatchKit%20Extension/CharacterCreationScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "B488ABCC-1FEE-4DCF-9BD1-482F6A85AF71 - 8686c7321f477394"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in DownloadingData_WatchKit_Extension.CharacterCreationScreen.chooseClass(with: DownloadingData_WatchKit_Extension.PlayableClass) -&gt; ()"
+                  moduleName = "DownloadingData WatchKit Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacobrozell/Desktop/WatchOS/DownloadingData/DownloadingData%20WatchKit%20Extension/CharacterCreationScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "34">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CBC79F4D-69B8-48F8-9880-B6913BABA0F9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DownloadingData WatchKit Extension/CharacterCreationScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "chooseClass(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BAE59267-A9E8-44B9-B43D-B8C2D7882926"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DownloadingData WatchKit Extension/CharacterCreationScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "chooseClass(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BAE59267-A9E8-44B9-B43D-B8C2D7882926 - 7f60c13b450e3fa3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DownloadingData_WatchKit_Extension.CharacterCreationScreen.chooseClass(with: DownloadingData_WatchKit_Extension.PlayableClass) -&gt; ()"
+                  moduleName = "DownloadingData WatchKit Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacobrozell/Desktop/WatchOS/DownloadingData/DownloadingData%20WatchKit%20Extension/CharacterCreationScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "918">
+               </Location>
+               <Location
+                  uuid = "BAE59267-A9E8-44B9-B43D-B8C2D7882926 - 8686c7321f477394"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in DownloadingData_WatchKit_Extension.CharacterCreationScreen.chooseClass(with: DownloadingData_WatchKit_Extension.PlayableClass) -&gt; ()"
+                  moduleName = "DownloadingData WatchKit Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacobrozell/Desktop/WatchOS/DownloadingData/DownloadingData%20WatchKit%20Extension/CharacterCreationScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "790">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0500FF44-EFF7-4E99-8905-8676B787272C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DownloadingData WatchKit Extension/CharacterCreationScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "chooseClass(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
