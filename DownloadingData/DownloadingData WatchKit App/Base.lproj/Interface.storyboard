@@ -43,7 +43,14 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="337" y="-39"/>
+            <point key="canvasLocation" x="220" y="-32"/>
+        </scene>
+        <!--profileView-->
+        <scene sceneID="zmc-ck-FQi">
+            <objects>
+                <controller identifier="profileView" id="J9N-VU-chK"/>
+            </objects>
+            <point key="canvasLocation" x="456" y="-40"/>
         </scene>
         <!--Loading Screen-->
         <scene sceneID="wLn-Bw-3t4">
@@ -94,6 +101,6 @@
     </scenes>
     <resources>
         <image name="knioght" width="241" height="209"/>
-        <image name="mage?" width="148.32000732421875" height="132.47999572753906"/>
+        <image name="mage?" width="206" height="184"/>
     </resources>
 </document>

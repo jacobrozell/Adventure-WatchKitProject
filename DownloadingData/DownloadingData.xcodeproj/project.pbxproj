@@ -17,6 +17,9 @@
 		36D66B5E23B67890006CC1BB /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D66B5D23B67890006CC1BB /* FeedModel.swift */; };
 		36D66B6023B69DFE006CC1BB /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D66B5F23B69DFE006CC1BB /* LoadingScreen.swift */; };
 		36D66B6223B6A264006CC1BB /* CharacterCreationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D66B6123B6A264006CC1BB /* CharacterCreationScreen.swift */; };
+		36D66B6C23B939B6006CC1BB /* GameConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D66B6B23B939B6006CC1BB /* GameConfig.swift */; };
+		36D66B7023B9426A006CC1BB /* ConfigFeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D66B6F23B9426A006CC1BB /* ConfigFeeds.swift */; };
+		36D66B7223B94327006CC1BB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D66B7123B94327006CC1BB /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +79,9 @@
 		36D66B5D23B67890006CC1BB /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
 		36D66B5F23B69DFE006CC1BB /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
 		36D66B6123B6A264006CC1BB /* CharacterCreationScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCreationScreen.swift; sourceTree = "<group>"; };
+		36D66B6B23B939B6006CC1BB /* GameConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConfig.swift; sourceTree = "<group>"; };
+		36D66B6F23B9426A006CC1BB /* ConfigFeeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigFeeds.swift; sourceTree = "<group>"; };
+		36D66B7123B94327006CC1BB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,16 +127,35 @@
 		36D66B4523B671F4006CC1BB /* DownloadingData WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				36D66B6123B6A264006CC1BB /* CharacterCreationScreen.swift */,
+				36D66B6D23B94025006CC1BB /* Util */,
+				36D66B6E23B9403D006CC1BB /* InterfaceControllers */,
 				36D66B4823B671F4006CC1BB /* ExtensionDelegate.swift */,
 				36D66B4A23B671F4006CC1BB /* NotificationController.swift */,
 				36D66B4C23B671F5006CC1BB /* Assets.xcassets */,
 				36D66B4E23B671F5006CC1BB /* Info.plist */,
 				36D66B4F23B671F5006CC1BB /* PushNotificationPayload.apns */,
-				36D66B5D23B67890006CC1BB /* FeedModel.swift */,
-				36D66B5F23B69DFE006CC1BB /* LoadingScreen.swift */,
 			);
 			path = "DownloadingData WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		36D66B6D23B94025006CC1BB /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				36D66B5D23B67890006CC1BB /* FeedModel.swift */,
+				36D66B6B23B939B6006CC1BB /* GameConfig.swift */,
+				36D66B6F23B9426A006CC1BB /* ConfigFeeds.swift */,
+				36D66B7123B94327006CC1BB /* Extensions.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		36D66B6E23B9403D006CC1BB /* InterfaceControllers */ = {
+			isa = PBXGroup;
+			children = (
+				36D66B5F23B69DFE006CC1BB /* LoadingScreen.swift */,
+				36D66B6123B6A264006CC1BB /* CharacterCreationScreen.swift */,
+			);
+			path = InterfaceControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +288,11 @@
 				36D66B6223B6A264006CC1BB /* CharacterCreationScreen.swift in Sources */,
 				36D66B6023B69DFE006CC1BB /* LoadingScreen.swift in Sources */,
 				36D66B4B23B671F4006CC1BB /* NotificationController.swift in Sources */,
+				36D66B7223B94327006CC1BB /* Extensions.swift in Sources */,
 				36D66B4923B671F4006CC1BB /* ExtensionDelegate.swift in Sources */,
+				36D66B7023B9426A006CC1BB /* ConfigFeeds.swift in Sources */,
 				36D66B5E23B67890006CC1BB /* FeedModel.swift in Sources */,
+				36D66B6C23B939B6006CC1BB /* GameConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

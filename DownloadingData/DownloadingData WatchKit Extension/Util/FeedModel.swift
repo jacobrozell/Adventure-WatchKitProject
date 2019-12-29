@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct PlayerClass: Decodable {
+private struct ClassFeed: Decodable {
     let choices: [Option]
 
     init(choices: [Option]) {
@@ -41,20 +41,18 @@ struct ScreenFeed: Decodable {
 struct Screen: Decodable {
     let text: String
     let subtext: String
-    //let classes: [PlayerClass]
     
-    init(text: String, subtext: String/*, classes: [PlayerClass]*/) {
+    init(text: String, subtext: String) {
         self.text = text
         self.subtext = subtext
-        //self.classes = classes
     }
     
     init() {
-        self.init(text: "", subtext: ""/*, classes: []*/)
+        self.init(text: "", subtext: "")
     }
 }
 
-struct Option: Decodable {
+private struct Option: Decodable {
     let choice: String
     let screenLink: Int
     

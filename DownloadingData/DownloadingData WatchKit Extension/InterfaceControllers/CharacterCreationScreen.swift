@@ -9,16 +9,7 @@
 import WatchKit
 import Foundation
 
-
-enum PlayableClass: String, Decodable {
-    case mage = "mage"
-    case warrior = "warrior"
-}
-
 class CharacterCreationScreen: WKInterfaceController {
-    
-    var playerClass: PlayableClass = .mage
-    
     
     // MARK: - IBActions
     @IBAction func mageSelected(_ sender: Any) {
@@ -29,11 +20,12 @@ class CharacterCreationScreen: WKInterfaceController {
         chooseClass(with: .warrior)
     }
     
-    func chooseClass(with pClass: PlayableClass) {
+    func chooseClass(with pClass: GameConfig.PlayableClass) {
         self.presentAlert(withTitle: "\(pClass.rawValue.capitalized) Selected!", message: "Are you sure?", preferredStyle: .alert, actions: [WKAlertAction(title: "Yes", style: .default, handler: {
             
-            self.playerClass = pClass
-            print("\(pClass.rawValue.capitalized) selected")
+            GameConfig.playerClass = pClass
+            GameConfig.userDefaults.setPlayerClass(to: pClass)
+            GameConfig.chosenClass = true
             
         }), WKAlertAction(title: "No", style: .cancel, handler: {
             return
@@ -42,7 +34,6 @@ class CharacterCreationScreen: WKInterfaceController {
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-
     }
     
     override func willActivate() {

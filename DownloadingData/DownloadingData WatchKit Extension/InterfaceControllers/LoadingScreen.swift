@@ -6,6 +6,7 @@
 //  Copyright © 2019 jacobrozell. All rights reserved.
 //
 
+import Foundation
 import UIKit
 import WatchKit
 
@@ -17,17 +18,9 @@ class LoadingScreen: WKInterfaceController {
         super.awake(withContext: context)
         downloadFeed()
     }
-    
-    override func willActivate() {
-        super.willActivate()
-    }
-    
-    override func didDeactivate() {
-        super.didDeactivate()
-    }
 
     func downloadFeed() {
-        let url = URL(string: "https://api.myjson.com/bins/ai6p0")
+        let url = URL(string: GameConfig.introFeed)
         
         let session = URLSession.shared.dataTask(with: url!, completionHandler : { (data, response, error) -> Void in
             
@@ -39,10 +32,8 @@ class LoadingScreen: WKInterfaceController {
             guard let data = data else { return }
 
             self.screenFeed = ScreenParser().parseObjectOfScreenFeedFromData(data)
-            
             self.checkDownload()
         })
-        
         session.resume()
     }
     
@@ -50,17 +41,24 @@ class LoadingScreen: WKInterfaceController {
         if screenFeed != nil {
             presentAlert(withTitle: "Download Data Complete!", message: "", preferredStyle: .alert, actions: [WKAlertAction(title: "Okay", style: .default, handler: {
                 // go to character screen
+                // TODO: NEED TO CONVERT THIS TO USERDEFAULTS
+                #warning("Need the check this ")
                 
-                let rootControllerIdentifier = "characterCreationScreen"
-                WKInterfaceController.reloadRootControllers(withNamesAndContexts: [(name: rootControllerIdentifier, context: [:] as AnyObject)])
+//                if GameConfig.userDefaults.string(forKey: UserDefaultsKeys.playerClass) != nil {
+//
+//                }
                 
-                self.pushController(withName: rootControllerIdentifier, context: nil)
+                if !GameConfig.chosenClass {
+                    let characterCreationScreen = GameConfig.characterCreationICID
+                    WKInterfaceController.reloadRootControllers(withNamesAndContexts: [(name: characterCreationScreen, context: [:] as AnyObject)])
+                    
+                    self.pushController(withName: characterCreationScreen, context: nil)
+                }
             })])
         } else {
             presentAlert(withTitle: "Download Data Failed!", message: "Check Internet Connection", preferredStyle: .alert, actions: [WKAlertAction(title: "Try Again", style: .default, handler: {
                 self.downloadFeed()
             })])
         }
-        
     }
 }
