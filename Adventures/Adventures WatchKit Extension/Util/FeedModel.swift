@@ -9,7 +9,8 @@
 import Foundation
 import UIKit
 
-private struct ClassFeed: Decodable {
+// MARK: - FeedModel
+private struct ClassFeed: Codable {
     let choices: [Option]
 
     init(choices: [Option]) {
@@ -17,7 +18,7 @@ private struct ClassFeed: Decodable {
     }
 }
 
-struct ScreenFeed: Decodable {
+struct ScreenFeed: Codable {
     let screen1: Screen
     let screen2: Screen
     
@@ -38,7 +39,7 @@ struct ScreenFeed: Decodable {
 }
 
 // Screen and Parsing
-struct Screen: Decodable {
+struct Screen: Codable {
     let text: String
     let subtext: String
     
@@ -52,7 +53,7 @@ struct Screen: Decodable {
     }
 }
 
-private struct Option: Decodable {
+private struct Option: Codable {
     let choice: String
     let screenLink: Int
     
@@ -62,6 +63,7 @@ private struct Option: Decodable {
     }
 }
 
+// MARK: - Parser
 class ScreenParser {
     func parseObjectOfScreenFeedFromData(_ data: Data?) -> ScreenFeed? {
         guard let dataIn = data else { return nil }

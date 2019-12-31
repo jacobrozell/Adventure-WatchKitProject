@@ -12,17 +12,16 @@ import UIKit
 enum GameConfig {
     
     // MARK: - Player Class Constants
-    enum PlayableClass: String, Decodable {
+    enum PlayableClass: String, Codable {
         case mage = "mage"
         case warrior = "warrior"
         case unset = "unset"
     }
     
     public static var chosenClass = false
-    public static var playerClass: PlayableClass = .unset
-    
+    static var playerClass: PlayableClass = .unset
+
     public static var characterCreationICID = "characterCreationScreen"
-    
     public static var userDefaults = UserDefaults.standard
     
     

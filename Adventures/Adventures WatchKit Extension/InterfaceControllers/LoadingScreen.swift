@@ -44,7 +44,7 @@ class LoadingScreen: WKInterfaceController {
                 // TODO: NEED TO CONVERT THIS TO USERDEFAULTS
                 #warning("Need the check this ")
                 
-//                if GameConfig.userDefaults.string(forKey: UserDefaultsKeys.playerClass) != nil {
+//                if GameConfig.userDefaults.getPlayerClass() != nil {
 //
 //                }
                 

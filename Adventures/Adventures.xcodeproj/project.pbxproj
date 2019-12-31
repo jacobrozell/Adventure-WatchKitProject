@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		36D66B3323B671F2006CC1BB /* DownloadingData WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 36D66B3223B671F2006CC1BB /* DownloadingData WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		36D66B3323B671F2006CC1BB /* Adventures WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 36D66B3223B671F2006CC1BB /* Adventures WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		36D66B3923B671F2006CC1BB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36D66B3723B671F2006CC1BB /* Interface.storyboard */; };
 		36D66B3B23B671F4006CC1BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36D66B3A23B671F4006CC1BB /* Assets.xcassets */; };
-		36D66B4223B671F4006CC1BB /* DownloadingData WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 36D66B4123B671F4006CC1BB /* DownloadingData WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		36D66B4223B671F4006CC1BB /* Adventures WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 36D66B4123B671F4006CC1BB /* Adventures WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		36D66B4923B671F4006CC1BB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D66B4823B671F4006CC1BB /* ExtensionDelegate.swift */; };
 		36D66B4B23B671F4006CC1BB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D66B4A23B671F4006CC1BB /* NotificationController.swift */; };
 		36D66B4D23B671F5006CC1BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36D66B4C23B671F5006CC1BB /* Assets.xcassets */; };
@@ -46,7 +46,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				36D66B4223B671F4006CC1BB /* DownloadingData WatchKit Extension.appex in Embed App Extensions */,
+				36D66B4223B671F4006CC1BB /* Adventures WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,7 +57,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				36D66B3323B671F2006CC1BB /* DownloadingData WatchKit App.app in Embed Watch Content */,
+				36D66B3323B671F2006CC1BB /* Adventures WatchKit App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,12 +65,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		36D66B2E23B671F1006CC1BB /* DownloadingData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DownloadingData.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		36D66B3223B671F2006CC1BB /* DownloadingData WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DownloadingData WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36D66B2E23B671F1006CC1BB /* Adventures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adventures.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36D66B3223B671F2006CC1BB /* Adventures WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adventures WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D66B3823B671F2006CC1BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		36D66B3A23B671F4006CC1BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36D66B3C23B671F4006CC1BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		36D66B4123B671F4006CC1BB /* DownloadingData WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DownloadingData WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36D66B4123B671F4006CC1BB /* Adventures WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Adventures WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D66B4823B671F4006CC1BB /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		36D66B4A23B671F4006CC1BB /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		36D66B4C23B671F5006CC1BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,8 +98,8 @@
 		36D66B2723B671F1006CC1BB = {
 			isa = PBXGroup;
 			children = (
-				36D66B3623B671F2006CC1BB /* DownloadingData WatchKit App */,
-				36D66B4523B671F4006CC1BB /* DownloadingData WatchKit Extension */,
+				36D66B3623B671F2006CC1BB /* Adventures WatchKit App */,
+				36D66B4523B671F4006CC1BB /* Adventures WatchKit Extension */,
 				36D66B2F23B671F1006CC1BB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,24 +107,24 @@
 		36D66B2F23B671F1006CC1BB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				36D66B2E23B671F1006CC1BB /* DownloadingData.app */,
-				36D66B3223B671F2006CC1BB /* DownloadingData WatchKit App.app */,
-				36D66B4123B671F4006CC1BB /* DownloadingData WatchKit Extension.appex */,
+				36D66B2E23B671F1006CC1BB /* Adventures.app */,
+				36D66B3223B671F2006CC1BB /* Adventures WatchKit App.app */,
+				36D66B4123B671F4006CC1BB /* Adventures WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		36D66B3623B671F2006CC1BB /* DownloadingData WatchKit App */ = {
+		36D66B3623B671F2006CC1BB /* Adventures WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
 				36D66B3723B671F2006CC1BB /* Interface.storyboard */,
 				36D66B3A23B671F4006CC1BB /* Assets.xcassets */,
 				36D66B3C23B671F4006CC1BB /* Info.plist */,
 			);
-			path = "DownloadingData WatchKit App";
+			path = "Adventures WatchKit App";
 			sourceTree = "<group>";
 		};
-		36D66B4523B671F4006CC1BB /* DownloadingData WatchKit Extension */ = {
+		36D66B4523B671F4006CC1BB /* Adventures WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
 				36D66B6D23B94025006CC1BB /* Util */,
@@ -135,7 +135,7 @@
 				36D66B4E23B671F5006CC1BB /* Info.plist */,
 				36D66B4F23B671F5006CC1BB /* PushNotificationPayload.apns */,
 			);
-			path = "DownloadingData WatchKit Extension";
+			path = "Adventures WatchKit Extension";
 			sourceTree = "<group>";
 		};
 		36D66B6D23B94025006CC1BB /* Util */ = {
@@ -161,9 +161,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		36D66B2D23B671F1006CC1BB /* DownloadingData */ = {
+		36D66B2D23B671F1006CC1BB /* Adventures */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36D66B5A23B671F5006CC1BB /* Build configuration list for PBXNativeTarget "DownloadingData" */;
+			buildConfigurationList = 36D66B5A23B671F5006CC1BB /* Build configuration list for PBXNativeTarget "Adventures" */;
 			buildPhases = (
 				36D66B2C23B671F1006CC1BB /* Resources */,
 				36D66B5923B671F5006CC1BB /* Embed Watch Content */,
@@ -173,14 +173,14 @@
 			dependencies = (
 				36D66B3523B671F2006CC1BB /* PBXTargetDependency */,
 			);
-			name = DownloadingData;
+			name = Adventures;
 			productName = DownloadingData;
-			productReference = 36D66B2E23B671F1006CC1BB /* DownloadingData.app */;
+			productReference = 36D66B2E23B671F1006CC1BB /* Adventures.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
-		36D66B3123B671F2006CC1BB /* DownloadingData WatchKit App */ = {
+		36D66B3123B671F2006CC1BB /* Adventures WatchKit App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36D66B5623B671F5006CC1BB /* Build configuration list for PBXNativeTarget "DownloadingData WatchKit App" */;
+			buildConfigurationList = 36D66B5623B671F5006CC1BB /* Build configuration list for PBXNativeTarget "Adventures WatchKit App" */;
 			buildPhases = (
 				36D66B3023B671F2006CC1BB /* Resources */,
 				36D66B5523B671F5006CC1BB /* Embed App Extensions */,
@@ -190,14 +190,14 @@
 			dependencies = (
 				36D66B4423B671F4006CC1BB /* PBXTargetDependency */,
 			);
-			name = "DownloadingData WatchKit App";
+			name = "Adventures WatchKit App";
 			productName = "DownloadingData WatchKit App";
-			productReference = 36D66B3223B671F2006CC1BB /* DownloadingData WatchKit App.app */;
+			productReference = 36D66B3223B671F2006CC1BB /* Adventures WatchKit App.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
-		36D66B4023B671F4006CC1BB /* DownloadingData WatchKit Extension */ = {
+		36D66B4023B671F4006CC1BB /* Adventures WatchKit Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36D66B5223B671F5006CC1BB /* Build configuration list for PBXNativeTarget "DownloadingData WatchKit Extension" */;
+			buildConfigurationList = 36D66B5223B671F5006CC1BB /* Build configuration list for PBXNativeTarget "Adventures WatchKit Extension" */;
 			buildPhases = (
 				36D66B3D23B671F4006CC1BB /* Sources */,
 				36D66B3E23B671F4006CC1BB /* Frameworks */,
@@ -207,9 +207,9 @@
 			);
 			dependencies = (
 			);
-			name = "DownloadingData WatchKit Extension";
+			name = "Adventures WatchKit Extension";
 			productName = "DownloadingData WatchKit Extension";
-			productReference = 36D66B4123B671F4006CC1BB /* DownloadingData WatchKit Extension.appex */;
+			productReference = 36D66B4123B671F4006CC1BB /* Adventures WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
@@ -233,7 +233,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 36D66B2B23B671F1006CC1BB /* Build configuration list for PBXProject "DownloadingData" */;
+			buildConfigurationList = 36D66B2B23B671F1006CC1BB /* Build configuration list for PBXProject "Adventures" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -246,9 +246,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				36D66B2D23B671F1006CC1BB /* DownloadingData */,
-				36D66B3123B671F2006CC1BB /* DownloadingData WatchKit App */,
-				36D66B4023B671F4006CC1BB /* DownloadingData WatchKit Extension */,
+				36D66B2D23B671F1006CC1BB /* Adventures */,
+				36D66B3123B671F2006CC1BB /* Adventures WatchKit App */,
+				36D66B4023B671F4006CC1BB /* Adventures WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -301,12 +301,12 @@
 /* Begin PBXTargetDependency section */
 		36D66B3523B671F2006CC1BB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 36D66B3123B671F2006CC1BB /* DownloadingData WatchKit App */;
+			target = 36D66B3123B671F2006CC1BB /* Adventures WatchKit App */;
 			targetProxy = 36D66B3423B671F2006CC1BB /* PBXContainerItemProxy */;
 		};
 		36D66B4423B671F4006CC1BB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 36D66B4023B671F4006CC1BB /* DownloadingData WatchKit Extension */;
+			target = 36D66B4023B671F4006CC1BB /* Adventures WatchKit Extension */;
 			targetProxy = 36D66B4323B671F4006CC1BB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -440,14 +440,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J638W5H5RB;
-				INFOPLIST_FILE = "DownloadingData WatchKit Extension/Info.plist";
+				DEVELOPMENT_TEAM = 7JT2JB89AV;
+				INFOPLIST_FILE = "$(SRCROOT)/Adventures WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jacobrozell.DownloadingData.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacobrozell.Adventures.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -462,14 +462,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J638W5H5RB;
-				INFOPLIST_FILE = "DownloadingData WatchKit Extension/Info.plist";
+				DEVELOPMENT_TEAM = 7JT2JB89AV;
+				INFOPLIST_FILE = "$(SRCROOT)/Adventures WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jacobrozell.DownloadingData.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacobrozell.Adventures.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -484,12 +484,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J638W5H5RB;
+				DEVELOPMENT_TEAM = 7JT2JB89AV;
 				IBSC_MODULE = DownloadingData_WatchKit_Extension;
-				INFOPLIST_FILE = "DownloadingData WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jacobrozell.DownloadingData.watchkitapp;
+				INFOPLIST_FILE = "$(SRCROOT)/Adventures WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacobrozell.Adventures.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -503,12 +505,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J638W5H5RB;
+				DEVELOPMENT_TEAM = 7JT2JB89AV;
 				IBSC_MODULE = DownloadingData_WatchKit_Extension;
-				INFOPLIST_FILE = "DownloadingData WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jacobrozell.DownloadingData.watchkitapp;
+				INFOPLIST_FILE = "$(SRCROOT)/Adventures WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacobrozell.Adventures.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -522,9 +526,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J638W5H5RB;
+				DEVELOPMENT_TEAM = 7JT2JB89AV;
+				INFOPLIST_FILE = "";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jacobrozell.DownloadingData;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacobrozell.Adventures;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -535,9 +540,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J638W5H5RB;
+				DEVELOPMENT_TEAM = 7JT2JB89AV;
+				INFOPLIST_FILE = "";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jacobrozell.DownloadingData;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacobrozell.Adventures;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -546,7 +552,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		36D66B2B23B671F1006CC1BB /* Build configuration list for PBXProject "DownloadingData" */ = {
+		36D66B2B23B671F1006CC1BB /* Build configuration list for PBXProject "Adventures" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36D66B5023B671F5006CC1BB /* Debug */,
@@ -555,7 +561,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36D66B5223B671F5006CC1BB /* Build configuration list for PBXNativeTarget "DownloadingData WatchKit Extension" */ = {
+		36D66B5223B671F5006CC1BB /* Build configuration list for PBXNativeTarget "Adventures WatchKit Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36D66B5323B671F5006CC1BB /* Debug */,
@@ -564,7 +570,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36D66B5623B671F5006CC1BB /* Build configuration list for PBXNativeTarget "DownloadingData WatchKit App" */ = {
+		36D66B5623B671F5006CC1BB /* Build configuration list for PBXNativeTarget "Adventures WatchKit App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36D66B5723B671F5006CC1BB /* Debug */,
@@ -573,7 +579,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36D66B5A23B671F5006CC1BB /* Build configuration list for PBXNativeTarget "DownloadingData" */ = {
+		36D66B5A23B671F5006CC1BB /* Build configuration list for PBXNativeTarget "Adventures" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36D66B5B23B671F5006CC1BB /* Debug */,
