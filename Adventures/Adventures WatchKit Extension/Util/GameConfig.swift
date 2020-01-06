@@ -10,15 +10,15 @@ import Foundation
 import WatchKit
 import UIKit
 
+// MARK: - Player Class Constants
+enum PlayableClass: String, Codable {
+    case mage = "mage"
+    case warrior = "warrior"
+    case unset = "unset"
+}
+
 enum GameConfig {
-    
-    // MARK: - Player Class Constants
-    enum PlayableClass: String, Codable {
-        case mage = "mage"
-        case warrior = "warrior"
-        case unset = "unset"
-    }
-    
+
     public static var chosenClass = false
     static var playerClass: PlayableClass = .unset
 
@@ -30,6 +30,9 @@ enum GameConfig {
     
     public static var profileViewID = "profileView"
     
+    public static var button1Link = -99
+    public static var button2Link = -99
+    public static var button3Link = -99
 }
 
 enum UserDefaultsKeys {

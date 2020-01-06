@@ -74,23 +74,26 @@
                         <separator alignment="left" id="VSd-Hq-1aI">
                             <color key="color" red="0.070588235289999995" green="0.20392156859999999" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </separator>
-                        <button width="1" alignment="left" hidden="YES" title="Button" id="q07-No-kXy">
+                        <button width="1" alignment="left" hidden="YES" title="b1" id="q07-No-kXy">
                             <connections>
                                 <action selector="option1Pressed" destination="5KE-sj-w1s" id="dsF-jv-68g"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" hidden="YES" title="Button" id="BEK-sB-Mpj">
+                        <button width="1" alignment="left" hidden="YES" title="b2" id="BEK-sB-Mpj">
                             <connections>
                                 <action selector="option2Pressed" destination="5KE-sj-w1s" id="EWN-ae-XIC"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" hidden="YES" title="Button" id="9hE-vk-QgL">
+                        <button width="1" alignment="left" hidden="YES" title="b3" id="9hE-vk-QgL">
                             <connections>
                                 <action selector="option3Pressed" destination="5KE-sj-w1s" id="XKn-lc-OJv"/>
                             </connections>
                         </button>
                     </items>
                     <connections>
+                        <outlet property="button1" destination="q07-No-kXy" id="hg4-T2-Mbu"/>
+                        <outlet property="button2" destination="BEK-sB-Mpj" id="MkM-Nz-d1F"/>
+                        <outlet property="button3" destination="9hE-vk-QgL" id="IgY-lE-qE3"/>
                         <outlet property="subtextLabel" destination="hs2-FW-4e7" id="fTF-6k-tLA"/>
                         <outlet property="textLabel" destination="Bed-DB-BnE" id="KCM-Y5-1jX"/>
                     </connections>

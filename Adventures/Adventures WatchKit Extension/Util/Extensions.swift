@@ -7,12 +7,14 @@
 //
 
 import Foundation
+import WatchKit
 
 extension UserDefaults {
     
     // MARK: - PlayerClass
-    func setPlayerClass(to value: GameConfig.PlayableClass) {
+    func setPlayerClass(to value: PlayableClass) {
         set(value, forKey: UserDefaultsKeys.playerClass)
     }
 
 }
+
