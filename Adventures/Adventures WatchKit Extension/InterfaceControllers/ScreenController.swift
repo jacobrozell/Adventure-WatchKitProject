@@ -42,6 +42,12 @@ class ScreenController: WKInterfaceController {
         textLabel.setText(currentScreen.text)
         subtextLabel.setText(currentScreen.subtext)
         
+        setupButtons()
+        
+    }
+    
+    // MARK: - Functions
+    func setupButtons() {
         for (index, option) in options.enumerated() {
             switch index {
             case 0:
@@ -57,7 +63,6 @@ class ScreenController: WKInterfaceController {
                 print("wtf??????????\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\n\n\n\n\n\n\n\n\n")
             }
         }
-        
     }
     
     func set(button: WKInterfaceButton, with title: String) {
@@ -65,6 +70,27 @@ class ScreenController: WKInterfaceController {
         button.setTitle(title)
     }
     
+    func isLinkValid(_ link: Int) -> Bool {
+        if link == -1 {
+            // Show warning that they will exit adventure
+            self.presentAlert(withTitle: "Leave the Adventure?", message: "", preferredStyle: .alert, actions: [WKAlertAction(title: "Yes", style: .default, handler: {
+                
+                self.popToRootController()
+                
+            }), WKAlertAction(title: "No", style: .cancel, handler: {
+                return
+            })])
+            
+            return false
+            
+        } else if link >= GameConfig.screenFeed.screens.count {
+            return false
+        }
+        
+        return true
+    }
+    
+    // MARK: - IBActions
     @IBAction func option1Pressed() {
         if isLinkValid(GameConfig.button1Link) {
            currentScreenIndex = GameConfig.button1Link
@@ -88,25 +114,4 @@ class ScreenController: WKInterfaceController {
 
         self.awake(withContext: nil)
     }
-    
-    func isLinkValid(_ link: Int) -> Bool {
-        if link == -1 {
-            // Show warning that they will exit adventure
-            self.presentAlert(withTitle: "Leave the Adventure?", message: "", preferredStyle: .alert, actions: [WKAlertAction(title: "Yes", style: .default, handler: {
-                
-                self.popToRootController()
-                
-            }), WKAlertAction(title: "No", style: .cancel, handler: {
-                return
-            })])
-            
-            return false
-            
-        } else if link >= GameConfig.screenFeed.screens.count {
-            return false
-        }
-        
-        return true
-    }
-    
 }
