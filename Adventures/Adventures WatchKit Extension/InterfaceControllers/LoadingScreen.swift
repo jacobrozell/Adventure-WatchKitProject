@@ -38,27 +38,34 @@ class LoadingScreen: WKInterfaceController {
     }
     
     func checkDownload() {
-        if screenFeed != nil {
-            presentAlert(withTitle: "Download Data Complete!", message: "", preferredStyle: .alert, actions: [WKAlertAction(title: "Okay", style: .default, handler: {
-                // go to character screen
-                // TODO: NEED TO CONVERT THIS TO USERDEFAULTS
-                #warning("Need the check this ")
-                
+        guard let feed = screenFeed else {
+            presentDownloadError()
+            return
+        }
+        
+        GameConfig.screenFeed = feed
+        
+        presentAlert(withTitle: "Download Data Complete!", message: "", preferredStyle: .alert, actions: [WKAlertAction(title: "Okay", style: .default, handler: {
+            
+            // TODO: NEED TO CONVERT THIS TO USERDEFAULTS
+            // #warning("Need the check this ")
+            
 //                if GameConfig.userDefaults.getPlayerClass() != nil {
 //
 //                }
+            
+            if !GameConfig.chosenClass {
+                navigate(to: GameConfig.characterCreationICID, from: self, shouldChangeRoot: true)
                 
-                if !GameConfig.chosenClass {
-                    let characterCreationScreen = GameConfig.characterCreationICID
-                    WKInterfaceController.reloadRootControllers(withNamesAndContexts: [(name: characterCreationScreen, context: [:] as AnyObject)])
-                    
-                    self.pushController(withName: characterCreationScreen, context: nil)
-                }
-            })])
-        } else {
-            presentAlert(withTitle: "Download Data Failed!", message: "Check Internet Connection", preferredStyle: .alert, actions: [WKAlertAction(title: "Try Again", style: .default, handler: {
-                self.downloadFeed()
-            })])
-        }
+            } else {
+                navigate(to: GameConfig.profileViewID, from: self, shouldChangeRoot: true)
+            }
+        })])
+    }
+    
+    func presentDownloadError() {
+        presentAlert(withTitle: "Download Data Failed!", message: "Check Internet Connection", preferredStyle: .alert, actions: [WKAlertAction(title: "Try Again", style: .default, handler: {
+            self.downloadFeed()
+        })])
     }
 }

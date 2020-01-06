@@ -10,31 +10,20 @@ import Foundation
 import UIKit
 
 // MARK: - FeedModel
-private struct ClassFeed: Codable {
-    let choices: [Option]
-
-    init(choices: [Option]) {
-        self.choices = choices
-    }
-}
-
 struct ScreenFeed: Codable {
-    let screen1: Screen
-    let screen2: Screen
+    let screens: [Screen]
     
-    init(screen1: Screen, screen2: Screen) {
-        self.screen1 = screen1
-        self.screen2 = screen2
+    init(screens: [Screen]) {
+        self.screens = screens
     }
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        screen1 = try container.decode(Screen.self, forKey: .screen1)
-        screen2 = try container.decode(Screen.self, forKey: .screen2)
+        screens = try container.decode([Screen].self, forKey: .screens)
     }
     
     private enum CodingKeys: CodingKey {
-        case screen1, screen2
+        case screens
     }
 }
 
@@ -42,18 +31,30 @@ struct ScreenFeed: Codable {
 struct Screen: Codable {
     let text: String
     let subtext: String
+    let options: Options
     
-    init(text: String, subtext: String) {
+    init(text: String, subtext: String, options: Options) {
         self.text = text
         self.subtext = subtext
+        self.options = options
     }
     
     init() {
-        self.init(text: "", subtext: "")
+        self.init(text: "", subtext: "", options: Options(good: [], bad: []))
     }
 }
 
-private struct Option: Codable {
+struct Options: Codable {
+    let good: [Option]
+    let bad: [Option]
+    
+    init(good: [Option], bad: [Option]) {
+        self.good = good
+        self.bad = bad
+    }
+}
+
+struct Option: Codable {
     let choice: String
     let screenLink: Int
     
@@ -70,6 +71,6 @@ class ScreenParser {
         if let result = try? JSONDecoder().decode(ScreenFeed.self, from: dataIn) {
             return result
         }
-        return ScreenFeed(screen1: Screen(), screen2: Screen())
+        return nil
     }
 }

@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15702" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Zi1-XJ-Adc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15505" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Zi1-XJ-Adc">
     <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
     </dependencies>
     <scenes>
         <!--characterCreationScreen-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller identifier="characterCreationScreen" id="AgC-eL-Hgc" customClass="CharacterCreationScreen" customModule="DownloadingData_WatchKit_App" customModuleProvider="target">
+                <controller identifier="characterCreationScreen" id="AgC-eL-Hgc" customClass="CharacterCreationScreen" customModule="Adventures_WatchKit_Extension">
                     <items>
                         <label width="1" alignment="left" text="Which character would you like to choose?" textAlignment="left" numberOfLines="0" id="6dz-vS-fYM"/>
-                        <separator alignment="left" id="QiM-db-xyr"/>
+                        <separator alignment="left" id="QiM-db-xyr">
+                            <color key="color" red="0.070588235289999995" green="0.20392156859999999" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
                         <group width="1" height="45" alignment="left" id="Vb3-60-mKn">
                             <items>
                                 <imageView width="60" height="1" alignment="left" image="mage?" contentMode="scaleAspectFit" id="AyV-Cp-Z5N"/>
@@ -26,7 +28,9 @@
                                 </tapGestureRecognizer>
                             </gestureRecognizers>
                         </group>
-                        <separator alignment="left" id="mM0-lE-VRx"/>
+                        <separator alignment="left" id="mM0-lE-VRx">
+                            <color key="color" red="0.070588235289999995" green="0.20392156859999999" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
                         <group width="1" height="45" alignment="left" id="LDk-wd-2aO">
                             <items>
                                 <imageView width="60" height="1" alignment="left" image="knioght" contentMode="scaleAspectFit" id="1YT-pe-vZy"/>
@@ -48,20 +52,62 @@
         <!--profileView-->
         <scene sceneID="zmc-ck-FQi">
             <objects>
-                <controller identifier="profileView" id="J9N-VU-chK"/>
+                <controller identifier="profileView" id="J9N-VU-chK" customClass="ProfileMainView" customModule="Adventures_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Adventures" id="7SW-FL-Rsv">
+                            <connections>
+                                <action selector="adventuresPressed" destination="J9N-VU-chK" id="mDo-Ur-OKh"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="456" y="-40"/>
+        </scene>
+        <!--screenViewController-->
+        <scene sceneID="Yyt-1l-hJF">
+            <objects>
+                <controller identifier="screenViewController" id="5KE-sj-w1s" customClass="ScreenController" customModule="Adventures_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Header text" textAlignment="center" numberOfLines="0" id="Bed-DB-BnE"/>
+                        <label width="1" alignment="left" text="Sub text" textAlignment="center" numberOfLines="0" id="hs2-FW-4e7"/>
+                        <separator alignment="left" id="VSd-Hq-1aI">
+                            <color key="color" red="0.070588235289999995" green="0.20392156859999999" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <button width="1" alignment="left" hidden="YES" title="Button" id="q07-No-kXy">
+                            <connections>
+                                <action selector="option1Pressed" destination="5KE-sj-w1s" id="dsF-jv-68g"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" hidden="YES" title="Button" id="BEK-sB-Mpj">
+                            <connections>
+                                <action selector="option2Pressed" destination="5KE-sj-w1s" id="EWN-ae-XIC"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" hidden="YES" title="Button" id="9hE-vk-QgL">
+                            <connections>
+                                <action selector="option3Pressed" destination="5KE-sj-w1s" id="XKn-lc-OJv"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="subtextLabel" destination="hs2-FW-4e7" id="fTF-6k-tLA"/>
+                        <outlet property="textLabel" destination="Bed-DB-BnE" id="KCM-Y5-1jX"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="700" y="-40"/>
         </scene>
         <!--Loading Screen-->
         <scene sceneID="wLn-Bw-3t4">
             <objects>
-                <controller id="Zi1-XJ-Adc" customClass="LoadingScreen" customModule="DownloadingData_WatchKit_Extension">
+                <controller id="Zi1-XJ-Adc" customClass="LoadingScreen" customModule="Adventures_WatchKit_Extension">
                     <items>
                         <label width="1" alignment="left" text="Avasia: Adventures" textAlignment="center" numberOfLines="0" id="2Se-Ym-hOb"/>
                         <separator alignment="left" id="CDE-IQ-Xd8">
-                            <color key="color" red="0.15257585330000001" green="0.2178194597" blue="0.45715268780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="color" red="0.070588235294117646" green="0.20392156862745098" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </separator>
-                        <label width="1" alignment="left" text="Downloading..." textAlignment="center" id="aYw-UO-hCK"/>
+                        <label width="1" height="100" alignment="left" text="Downloading..." textAlignment="center" id="aYw-UO-hCK"/>
                     </items>
                 </controller>
             </objects>
@@ -87,14 +133,14 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="DownloadingData_WatchKit_App" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Adventures_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="Niz-AI-uX2">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="DownloadingData_WatchKit_App" customModuleProvider="target"/>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="Adventures_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="345"/>
         </scene>

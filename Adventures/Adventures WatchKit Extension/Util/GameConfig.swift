@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import WatchKit
 import UIKit
 
 enum GameConfig {
@@ -24,9 +25,22 @@ enum GameConfig {
     public static var characterCreationICID = "characterCreationScreen"
     public static var userDefaults = UserDefaults.standard
     
+    public static var screenID = "screenViewController"
+    public static var screenFeed = ScreenFeed(screens: [])
+    
+    public static var profileViewID = "profileView"
     
 }
 
 enum UserDefaultsKeys {
     public static var playerClass = "playerClass"
+}
+
+func navigate(to id: String, from controller: WKInterfaceController, shouldChangeRoot: Bool=false) {
+    
+    if shouldChangeRoot {
+        WKInterfaceController.reloadRootControllers(withNamesAndContexts: [(name: id, context: [:] as AnyObject)])
+    }
+
+    controller.pushController(withName: id, context: nil)
 }

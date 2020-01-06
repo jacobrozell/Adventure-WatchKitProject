@@ -24,8 +24,10 @@ class CharacterCreationScreen: WKInterfaceController {
         self.presentAlert(withTitle: "\(pClass.rawValue.capitalized) Selected!", message: "Are you sure?", preferredStyle: .alert, actions: [WKAlertAction(title: "Yes", style: .default, handler: {
             
             GameConfig.playerClass = pClass
-            GameConfig.userDefaults.setPlayerClass(to: pClass)
+            //GameConfig.userDefaults.setPlayerClass(to: pClass)
             GameConfig.chosenClass = true
+            
+            navigate(to: GameConfig.profileViewID, from: self, shouldChangeRoot: true)
             
         }), WKAlertAction(title: "No", style: .cancel, handler: {
             return

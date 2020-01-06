@@ -84,5 +84,69 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52391251-3EC3-4A29-AB8F-39B9BEF36884"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Adventures WatchKit Extension/InterfaceControllers/LoadingScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "checkDownload()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "52391251-3EC3-4A29-AB8F-39B9BEF36884 - 1a03ca57e9603a02"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Adventures_WatchKit_Extension.LoadingScreen.checkDownload() -&gt; ()"
+                  moduleName = "Adventures WatchKit Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacobrozell/Desktop/LearnWatchOS/Adventures/Adventures%20WatchKit%20Extension/InterfaceControllers/LoadingScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "241">
+               </Location>
+               <Location
+                  uuid = "52391251-3EC3-4A29-AB8F-39B9BEF36884 - d24117ca84b8a1ec"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in Adventures_WatchKit_Extension.LoadingScreen.checkDownload() -&gt; ()"
+                  moduleName = "Adventures WatchKit Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacobrozell/Desktop/LearnWatchOS/Adventures/Adventures%20WatchKit%20Extension/InterfaceControllers/LoadingScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "30">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4C05D13D-884D-482C-973D-3141FE54DD85"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Adventures WatchKit Extension/InterfaceControllers/ScreenController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "awake(withContext:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
