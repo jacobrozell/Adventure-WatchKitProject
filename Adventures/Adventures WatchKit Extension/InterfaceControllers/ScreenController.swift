@@ -29,7 +29,6 @@ class ScreenController: WKInterfaceController {
     var options: [Option] = []
     
     override func awake(withContext context: Any?) {
-        
         scroll(to: textLabel, at: WKInterfaceScrollPosition(rawValue: 0)!, animated: false)
         
         button1.setHidden(true)
@@ -67,19 +66,47 @@ class ScreenController: WKInterfaceController {
     }
     
     @IBAction func option1Pressed() {
-        currentScreenIndex = GameConfig.button1Link
+        if isLinkValid(GameConfig.button1Link) {
+           currentScreenIndex = GameConfig.button1Link
+        }
+        
         self.awake(withContext: nil)
     }
     
     @IBAction func option2Pressed() {
-        currentScreenIndex = GameConfig.button2Link
+        if isLinkValid(GameConfig.button2Link) {
+           currentScreenIndex = GameConfig.button2Link
+        }
+
         self.awake(withContext: nil)
     }
     
     @IBAction func option3Pressed() {
-        currentScreenIndex = GameConfig.button3Link
+        if isLinkValid(GameConfig.button3Link) {
+           currentScreenIndex = GameConfig.button3Link
+        }
+
         self.awake(withContext: nil)
     }
     
+    func isLinkValid(_ link: Int) -> Bool {
+        if link == -1 {
+            // Show warning that they will exit adventure
+            self.presentAlert(withTitle: "Leave the Adventure?", message: "", preferredStyle: .alert, actions: [WKAlertAction(title: "Yes", style: .default, handler: {
+                
+                self.popToRootController()
+                
+            }), WKAlertAction(title: "No", style: .cancel, handler: {
+                return
+            })])
+            
+            return false
+            
+        } else if link >= GameConfig.screenFeed.screens.count {
+            return false
+        }
+        
+        return true
+    }
     
 }
