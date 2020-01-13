@@ -43,7 +43,6 @@ class ScreenController: WKInterfaceController {
         subtextLabel.setText(currentScreen.subtext)
         
         setupButtons()
-        
     }
     
     // MARK: - Functions
@@ -53,12 +52,15 @@ class ScreenController: WKInterfaceController {
             case 0:
                 set(button: button1, with: option.choice)
                 GameConfig.button1Link = option.screenLink
+                GameConfig.rewards1 = option.rewards
             case 1:
                 set(button: button2, with: option.choice)
                 GameConfig.button2Link = option.screenLink
+                GameConfig.rewards2 = option.rewards
             case 2:
                 set(button: button3, with: option.choice)
                 GameConfig.button3Link = option.screenLink
+                GameConfig.rewards3 = option.rewards
             default:
                 print("wtf??????????\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\n\n\n\n\n\n\n\n\n")
             }
@@ -72,15 +74,7 @@ class ScreenController: WKInterfaceController {
     
     func isLinkValid(_ link: Int) -> Bool {
         if link == -1 {
-            // Show warning that they will exit adventure
-            self.presentAlert(withTitle: "Leave the Adventure?", message: "", preferredStyle: .alert, actions: [WKAlertAction(title: "Yes", style: .default, handler: {
-                
-                self.popToRootController()
-                
-            }), WKAlertAction(title: "No", style: .cancel, handler: {
-                return
-            })])
-            
+            leaveAdventure(vc: self)
             return false
             
         } else if link >= GameConfig.screenFeed.screens.count {
@@ -93,25 +87,25 @@ class ScreenController: WKInterfaceController {
     // MARK: - IBActions
     @IBAction func option1Pressed() {
         if isLinkValid(GameConfig.button1Link) {
-           currentScreenIndex = GameConfig.button1Link
+            currentScreenIndex = GameConfig.button1Link
+            GameConfig.__playerExp += GameConfig.rewards1.exp
+            GameConfig.__playerFactionPoints += GameConfig.rewards1.factionPoints
+            GameConfig.__playerMoney += GameConfig.rewards1.money
         }
-        
         self.awake(withContext: nil)
     }
     
     @IBAction func option2Pressed() {
         if isLinkValid(GameConfig.button2Link) {
-           currentScreenIndex = GameConfig.button2Link
+            currentScreenIndex = GameConfig.button2Link
         }
-
         self.awake(withContext: nil)
     }
     
     @IBAction func option3Pressed() {
         if isLinkValid(GameConfig.button3Link) {
-           currentScreenIndex = GameConfig.button3Link
+            currentScreenIndex = GameConfig.button3Link
         }
-
         self.awake(withContext: nil)
     }
 }

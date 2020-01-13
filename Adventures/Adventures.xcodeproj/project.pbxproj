@@ -10,6 +10,7 @@
 		361606CB23C2D7EA00D8AA20 /* ScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361606CA23C2D7EA00D8AA20 /* ScreenController.swift */; };
 		361606CC23C2DFF900D8AA20 /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D66B5F23B69DFE006CC1BB /* LoadingScreen.swift */; };
 		361606CE23C2E23800D8AA20 /* ProfileMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361606CD23C2E23800D8AA20 /* ProfileMainView.swift */; };
+		3622347023CCE7ED00530607 /* StatsControlelr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622346F23CCE7ED00530607 /* StatsControlelr.swift */; };
 		36D66B3323B671F2006CC1BB /* Adventures WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 36D66B3223B671F2006CC1BB /* Adventures WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		36D66B3923B671F2006CC1BB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36D66B3723B671F2006CC1BB /* Interface.storyboard */; };
 		36D66B3B23B671F4006CC1BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36D66B3A23B671F4006CC1BB /* Assets.xcassets */; };
@@ -69,6 +70,7 @@
 /* Begin PBXFileReference section */
 		361606CA23C2D7EA00D8AA20 /* ScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenController.swift; sourceTree = "<group>"; };
 		361606CD23C2E23800D8AA20 /* ProfileMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainView.swift; sourceTree = "<group>"; };
+		3622346F23CCE7ED00530607 /* StatsControlelr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsControlelr.swift; sourceTree = "<group>"; };
 		36D66B2E23B671F1006CC1BB /* Adventures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adventures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D66B3223B671F2006CC1BB /* Adventures WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adventures WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D66B3823B671F2006CC1BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				36D66B6123B6A264006CC1BB /* CharacterCreationScreen.swift */,
 				361606CD23C2E23800D8AA20 /* ProfileMainView.swift */,
 				361606CA23C2D7EA00D8AA20 /* ScreenController.swift */,
+				3622346F23CCE7ED00530607 /* StatsControlelr.swift */,
 			);
 			path = InterfaceControllers;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			files = (
 				36D66B6223B6A264006CC1BB /* CharacterCreationScreen.swift in Sources */,
 				361606CB23C2D7EA00D8AA20 /* ScreenController.swift in Sources */,
+				3622347023CCE7ED00530607 /* StatsControlelr.swift in Sources */,
 				36D66B4B23B671F4006CC1BB /* NotificationController.swift in Sources */,
 				36D66B7223B94327006CC1BB /* Extensions.swift in Sources */,
 				36D66B4923B671F4006CC1BB /* ExtensionDelegate.swift in Sources */,

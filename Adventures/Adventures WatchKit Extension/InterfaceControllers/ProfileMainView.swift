@@ -12,9 +12,14 @@ import Foundation
 
 class ProfileMainView: WKInterfaceController {
     @IBAction func adventuresPressed() {
-        //let screen = ScreenController(screen: GameConfig.screenFeed.screen1)
-        
         pushController(withName: GameConfig.screenID, context: nil)
     }
+    
+    @IBAction func profileButtonPressed() {
+        pushController(withName: GameConfig.statsScreen, context: nil)
+    }
+    
+    
+    
     
 }

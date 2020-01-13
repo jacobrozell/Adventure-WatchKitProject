@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15505" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Zi1-XJ-Adc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15702" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Zi1-XJ-Adc">
     <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
     </dependencies>
     <scenes>
@@ -47,7 +47,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="-32"/>
+            <point key="canvasLocation" x="220" y="-315"/>
         </scene>
         <!--profileView-->
         <scene sceneID="zmc-ck-FQi">
@@ -59,10 +59,15 @@
                                 <action selector="adventuresPressed" destination="J9N-VU-chK" id="mDo-Ur-OKh"/>
                             </connections>
                         </button>
+                        <button width="1" alignment="left" title="Profile" id="7Vb-ba-bhp">
+                            <connections>
+                                <action selector="profileButtonPressed" destination="J9N-VU-chK" id="p7g-lJ-qJP"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="456" y="-40"/>
+            <point key="canvasLocation" x="-3" y="-15"/>
         </scene>
         <!--screenViewController-->
         <scene sceneID="Yyt-1l-hJF">
@@ -99,7 +104,41 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="700" y="-40"/>
+            <point key="canvasLocation" x="251" y="-15"/>
+        </scene>
+        <!--Level 1-->
+        <scene sceneID="dPh-jP-JTO">
+            <objects>
+                <controller identifier="statsController" title="Level 1" id="6pr-W4-All">
+                    <items>
+                        <group width="1" alignment="left" id="2q5-7O-p35">
+                            <items>
+                                <label alignment="left" text="Level: 1" textAlignment="left" numberOfLines="0" id="WZJ-fG-tKU"/>
+                                <label alignment="right" text="Mage" textAlignment="right" baselineAdjustment="alignCenters" numberOfLines="0" id="yeS-X7-VzR"/>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="SBc-Tj-68N">
+                            <color key="color" red="0.16862745100000001" green="0.23921568630000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <label width="1" alignment="left" text="Exp Points: " textAlignment="center" id="AGR-gl-Gre"/>
+                        <label width="1" alignment="left" text="0" textAlignment="center" id="yEv-Jw-QCJ"/>
+                        <separator alignment="left" id="jyZ-lD-OxU">
+                            <color key="color" red="0.16862745100000001" green="0.23921568630000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <label width="1" alignment="left" text="Faction Points: " textAlignment="center" id="pWi-NZ-hJ6"/>
+                        <label width="1" alignment="left" text="0" textAlignment="center" id="ld8-tt-lK2"/>
+                        <separator alignment="left" id="2yw-Pr-PSd">
+                            <color key="color" red="0.16862745100000001" green="0.23921568630000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <label width="1" alignment="left" text="Money:" textAlignment="center" id="Kfe-gM-6TK"/>
+                        <label width="1" alignment="left" text="$0" textAlignment="center" id="RKW-Jo-u9Z"/>
+                        <separator alignment="left" id="7iE-SQ-A8v">
+                            <color key="color" red="0.16862745100000001" green="0.23921568630000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-263" y="-15"/>
         </scene>
         <!--Loading Screen-->
         <scene sceneID="wLn-Bw-3t4">
@@ -114,7 +153,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-3" y="-40"/>
+            <point key="canvasLocation" x="-3" y="-323"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

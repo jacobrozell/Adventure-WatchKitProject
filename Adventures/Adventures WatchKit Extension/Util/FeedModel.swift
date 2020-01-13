@@ -57,10 +57,30 @@ struct Options: Codable {
 struct Option: Codable {
     let choice: String
     let screenLink: Int
+    let rewards: Reward
     
-    init(choice: String, screenLink: Int) {
+    init(choice: String, screenLink: Int, rewards: Reward) {
         self.choice = choice
         self.screenLink = screenLink
+        self.rewards = rewards
+    }
+}
+
+struct Reward: Codable {
+    var factionPoints: Int? = 0
+    var exp: Float? = 0
+    var money: Int? = 0
+    
+    init(factionPoints: Int=0, exp: Float=0, money: Int=0) {
+        self.factionPoints = factionPoints
+        self.exp = exp
+        self.money = money
+    }
+    
+    init() {
+        self.factionPoints = 0
+        self.exp = 0
+        self.money = 0
     }
 }
 

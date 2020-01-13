@@ -29,10 +29,21 @@ enum GameConfig {
     public static var screenFeed = ScreenFeed(screens: [])
     
     public static var profileViewID = "profileView"
+    public static var statsScreen = "statsController"
     
     public static var button1Link = -99
     public static var button2Link = -99
     public static var button3Link = -99
+    
+    public static var rewards1: Reward = Reward()
+    public static var rewards2: Reward = Reward()
+    public static var rewards3: Reward = Reward()
+    
+    // Probably need to make these keys somewhere else
+    public static var __playerLevel = 1
+    public static var __playerMoney = 0
+    public static var __playerExp: Float = 0.0
+    public static var __playerFactionPoints = 0
 }
 
 enum UserDefaultsKeys {
@@ -40,10 +51,18 @@ enum UserDefaultsKeys {
 }
 
 func navigate(to id: String, from controller: WKInterfaceController, shouldChangeRoot: Bool=false) {
-    
     if shouldChangeRoot {
         WKInterfaceController.reloadRootControllers(withNamesAndContexts: [(name: id, context: [:] as AnyObject)])
     }
-
     controller.pushController(withName: id, context: nil)
+}
+
+func leaveAdventure(vc self: WKInterfaceController) {
+    self.presentAlert(withTitle: "Leave the Adventure?", message: "", preferredStyle: .alert, actions: [WKAlertAction(title: "Yes", style: .default, handler: {
+        
+        self.popToRootController()
+        
+    }), WKAlertAction(title: "No", style: .cancel, handler: {
+        return
+    })])
 }
