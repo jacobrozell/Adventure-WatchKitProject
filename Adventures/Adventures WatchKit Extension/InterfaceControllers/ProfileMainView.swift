@@ -13,6 +13,7 @@ import Foundation
 class ProfileMainView: WKInterfaceController {
     @IBAction func adventuresPressed() {
         pushController(withName: GameConfig.screenID, context: nil)
+        //navigate(to: GameConfig.screenID, from: self, shouldChangeRoot: true)
     }
     
     @IBAction func profileButtonPressed() {

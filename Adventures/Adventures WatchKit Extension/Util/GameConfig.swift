@@ -39,6 +39,8 @@ enum GameConfig {
     public static var rewards2: Reward = Reward()
     public static var rewards3: Reward = Reward()
     
+    public static var __playerRewardsForAdventure: [Reward] = []
+    
     // Probably need to make these keys somewhere else
     public static var __playerLevel = 1
     public static var __playerMoney = 0

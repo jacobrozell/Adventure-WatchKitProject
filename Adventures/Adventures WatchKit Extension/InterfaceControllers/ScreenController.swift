@@ -23,10 +23,11 @@ class ScreenController: WKInterfaceController {
     @IBOutlet weak var button2: WKInterfaceButton!
     @IBOutlet weak var button3: WKInterfaceButton!
     
-    var currentScreenIndex = 0
-    var currentScreen: Screen = Screen()
-    var faction: Faction = .good
-    var options: [Option] = []
+    private var currentScreenIndex = 0
+    private var currentScreen: Screen = Screen()
+    private var faction: Faction = .good
+    private var options: [Option] = []
+    private var adventureComplete = false
     
     override func awake(withContext context: Any?) {
         scroll(to: textLabel, at: WKInterfaceScrollPosition(rawValue: 0)!, animated: false)
@@ -46,7 +47,7 @@ class ScreenController: WKInterfaceController {
     }
     
     // MARK: - Functions
-    func setupButtons() {
+    private func setupButtons() {
         for (index, option) in options.enumerated() {
             switch index {
             case 0:
@@ -67,18 +68,20 @@ class ScreenController: WKInterfaceController {
         }
     }
     
-    func set(button: WKInterfaceButton, with title: String) {
+    private func set(button: WKInterfaceButton, with title: String) {
         button.setHidden(false)
         button.setTitle(title)
     }
     
-    func isLinkValid(_ link: Int) -> Bool {
+    private func isLinkValid(_ link: Int) -> Bool {
         if link == -1 {
             leaveAdventure(vc: self)
             return false
-            
         } else if link >= GameConfig.screenFeed.screens.count {
             return false
+        } else if link == 103 {
+            adventureComplete = true
+            return true
         }
         
         return true
@@ -87,10 +90,14 @@ class ScreenController: WKInterfaceController {
     // MARK: - IBActions
     @IBAction func option1Pressed() {
         if isLinkValid(GameConfig.button1Link) {
-            currentScreenIndex = GameConfig.button1Link
-            GameConfig.__playerExp += GameConfig.rewards1.exp
-            GameConfig.__playerFactionPoints += GameConfig.rewards1.factionPoints
-            GameConfig.__playerMoney += GameConfig.rewards1.money
+            if adventureComplete {
+                GameConfig.__playerRewardsForAdventure.append(GameConfig.rewards1)
+                // Go to rewards screen!!!!!!!!!
+                // remember to pop this controller and make home screen the root controller
+            } else {
+                currentScreenIndex = GameConfig.button1Link
+                GameConfig.__playerRewardsForAdventure.append(GameConfig.rewards1)
+            }
         }
         self.awake(withContext: nil)
     }
@@ -98,6 +105,7 @@ class ScreenController: WKInterfaceController {
     @IBAction func option2Pressed() {
         if isLinkValid(GameConfig.button2Link) {
             currentScreenIndex = GameConfig.button2Link
+            GameConfig.__playerRewardsForAdventure.append(GameConfig.rewards2)
         }
         self.awake(withContext: nil)
     }
@@ -105,6 +113,7 @@ class ScreenController: WKInterfaceController {
     @IBAction func option3Pressed() {
         if isLinkValid(GameConfig.button3Link) {
             currentScreenIndex = GameConfig.button3Link
+            GameConfig.__playerRewardsForAdventure.append(GameConfig.rewards3)
         }
         self.awake(withContext: nil)
     }

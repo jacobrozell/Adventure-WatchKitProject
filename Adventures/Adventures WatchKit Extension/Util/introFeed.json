@@ -1,0 +1,390 @@
+{
+  "screens": [
+    {
+      "text": "The early morning patrol scouts have gone missing. The sheriff/mayor/king has tasked you with going to check it out. ",
+      "subtext": "What do you tell him?",
+      "options": {
+        "good": [
+          {
+            "choice": "Absolutely! I will go alone.",
+            "screenLink": 2,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 20,
+              "money": 35
+            }
+          },
+          {
+            "choice": "I will need help for this task.",
+            "screenLink": 1,
+            "rewards": {
+              "factionPoints": 25,
+              "exp": 10,
+              "money": 10
+            }
+          },
+          {
+            "choice": "I'm too busy for this.",
+            "screenLink": -1,
+            "rewards": {
+              "factionPoints": 25,
+              "exp": 10,
+              "money": 10
+            }
+          }
+        ],
+        "bad": [
+          {
+            "choice": "It is my duty to protect! I will go alone.",
+            "screenLink": 2,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 20,
+              "money": 35
+            }
+          },
+          {
+            "choice": "I will need backup.",
+            "screenLink": 1,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 20,
+              "money": 35
+            }
+          },
+          {
+            "choice": "Send someone else.",
+            "screenLink": -1,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 20,
+              "money": 35
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "The king has sent you to the Guild Hall to recruit adventurers to help you search for the missing patrol.  ",
+      "subtext": "Who will you recruit?",
+      "options": {
+        "good": [
+          {
+            "choice": "I will recruit the Bard",
+            "screenLink": 2,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 20,
+              "money": 35
+            }
+          },
+          {
+            "choice": "I will recruit the Rouge. ",
+            "screenLink": 2,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 20,
+              "money": 35
+            }
+          },
+          {
+            "choice": "I will recruit the Warrior.",
+            "screenLink": 2,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 20,
+              "money": 35
+            }
+          }
+        ],
+        "bad": [
+          {
+            "choice": "I will recruit the Bard",
+            "screenLink": 2,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 20,
+              "money": 35
+            }
+          },
+          {
+            "choice": "I will recruit the Rouge. ",
+            "screenLink": 2,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 20,
+              "money": 35
+            }
+          },
+          {
+            "choice": "I will recruit the Mage.",
+            "screenLink": 2,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 20,
+              "money": 35
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "You now venture out past the city gates where the scout was last seen. You see trails leading the left, but it seems suspicious.",
+      "subtext": "Will you go left or right?",
+      "options": {
+        "good": [
+          {
+            "choice": "I will go left.",
+            "screenLink": 3,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 35,
+              "money": 35
+            }
+          },
+          {
+            "choice": "I will go right.",
+            "screenLink": 3,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 20,
+              "money": 35
+            }
+          }
+        ],
+        "bad": [
+          {
+            "choice": "I will go left.",
+            "screenLink": 3,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 20,
+              "money": 35
+            }
+          },
+          {
+            "choice": "I will go right.",
+            "screenLink": 3,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 20,
+              "money": 35
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "You go left and continue on the path. The missing patrol is laying in a pool of blood. It appears to be a bite wound. You hear noises coming from the trees to your right.",
+      "subtext": "What will you do?",
+      "options": {
+        "good": [
+          {
+            "choice": "Charge into the trees.",
+            "screenLink": 5,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 20,
+              "money": 35
+            }
+          },
+          {
+            "choice": "Quietly enter the trees.",
+            "screenLink": 5,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 20,
+              "money": 35
+            }
+          },
+          {
+            "choice": "Go back to town and inform of your findings.",
+            "screenLink": 7,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 20,
+              "money": 35
+            }
+          }
+        ],
+        "bad": [
+          {
+            "choice": "Charge into the trees.",
+            "screenLink": 5,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 20,
+              "money": 35
+            }
+          },
+          {
+            "choice": "Quietly enter the trees.",
+            "screenLink": 5,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 20,
+              "money": 35
+            }
+          },
+          {
+            "choice": "Go back to town and inform of your findings.",
+            "screenLink": 7,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 20,
+              "money": 35
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "You go right and continue on the path. You hear something coming from the trees to your left.",
+      "subtext": "What will you do?",
+      "options": {
+        "good": [
+          {
+            "choice": "Charge into the trees.",
+            "screenLink": 5,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 20,
+              "money": 35
+            }
+          },
+          {
+            "choice": "Quietly enter the trees.",
+            "screenLink": 5,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 20,
+              "money": 35
+            }
+          }
+        ],
+        "bad": [
+          {
+            "choice": "Charge into the trees.",
+            "screenLink": 5,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 20,
+              "money": 35
+            }
+          },
+          {
+            "choice": "Quietly enter the trees.",
+            "screenLink": 5,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 20,
+              "money": 35
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "A pack of 3 wolves greet you as you enter the trees. The obvious Pack-Leader is a brown Dire-Wolf covered in blood.  ",
+      "subtext": "What will you do?",
+      "options": {
+        "good": [
+          {
+            "choice": "Stand and fight.",
+            "screenLink": 6,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 100,
+              "money": 35
+            }
+          },
+          {
+            "choice": "Run back to town.",
+            "screenLink": 7,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 20,
+              "money": 35
+            }
+          }
+        ],
+        "bad": [
+          {
+            "choice": "Stand and fight.",
+            "screenLink": 6,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 100,
+              "money": 35
+            }
+          },
+          {
+            "choice": "Run back to town.",
+            "screenLink": 7,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 20,
+              "money": 35
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "You take a few minor wounds, but in the end you succeeded in defeating the pack of wolves.",
+      "subtext": "You head back to town.",
+      "options": {
+        "good": [
+          {
+            "choice": "Go back to town.",
+            "screenLink": 7,
+            "rewards": {
+              "factionPoints": 15,
+              "exp": 100,
+              "money": 0
+            }
+          }
+        ],
+        "bad": [
+          {
+            "choice": "Go back to town.",
+            "screenLink": 7,
+            "rewards": {
+              "factionPoints": 15,
+              "exp": 100,
+              "money": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "text": "You go back to town and inform the king/sheriff/mayor that the patrol was killed by a creature in the woods.",
+      "subtext": "The king/sheriff/mayor thanks you for your services.",
+      "options": {
+        "good": [
+          {
+            "choice": "Get Rewards!",
+            "screenLink": 103,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 20,
+              "money": 35
+            }
+          }
+        ],
+        "bad": [
+          {
+            "choice": "Get Rewards!",
+            "screenLink": 103,
+            "rewards": {
+              "factionPoints": 0,
+              "exp": 20,
+              "money": 35
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

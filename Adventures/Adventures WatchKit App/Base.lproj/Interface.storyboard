@@ -49,10 +49,10 @@
             </objects>
             <point key="canvasLocation" x="220" y="-315"/>
         </scene>
-        <!--profileView-->
+        <!--Home-->
         <scene sceneID="zmc-ck-FQi">
             <objects>
-                <controller identifier="profileView" id="J9N-VU-chK" customClass="ProfileMainView" customModule="Adventures_WatchKit_Extension">
+                <controller identifier="profileView" title="Home" id="J9N-VU-chK" customClass="ProfileMainView" customModule="Adventures_WatchKit_Extension">
                     <items>
                         <button width="1" alignment="left" title="Adventures" id="7SW-FL-Rsv">
                             <connections>
@@ -69,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="-3" y="-15"/>
         </scene>
-        <!--screenViewController-->
+        <!--Adventure-->
         <scene sceneID="Yyt-1l-hJF">
             <objects>
-                <controller identifier="screenViewController" id="5KE-sj-w1s" customClass="ScreenController" customModule="Adventures_WatchKit_Extension">
+                <controller identifier="screenViewController" title="Adventure" id="5KE-sj-w1s" customClass="ScreenController" customModule="Adventures_WatchKit_Extension">
                     <items>
                         <label width="1" alignment="left" text="Header text" textAlignment="center" numberOfLines="0" id="Bed-DB-BnE"/>
                         <label width="1" alignment="left" text="Sub text" textAlignment="center" numberOfLines="0" id="hs2-FW-4e7"/>
@@ -106,10 +106,10 @@
             </objects>
             <point key="canvasLocation" x="251" y="-15"/>
         </scene>
-        <!--Level 1-->
+        <!--Profile-->
         <scene sceneID="dPh-jP-JTO">
             <objects>
-                <controller identifier="statsController" title="Level 1" id="6pr-W4-All">
+                <controller identifier="statsController" title="Profile" id="6pr-W4-All" customClass="StatsController" customModule="Adventures_WatchKit_Extension">
                     <items>
                         <group width="1" alignment="left" id="2q5-7O-p35">
                             <items>
@@ -136,6 +136,11 @@
                             <color key="color" red="0.16862745100000001" green="0.23921568630000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </separator>
                     </items>
+                    <connections>
+                        <outlet property="expLabel" destination="yEv-Jw-QCJ" id="OC1-j7-OeB"/>
+                        <outlet property="factionPoints" destination="ld8-tt-lK2" id="t8m-cw-Oe0"/>
+                        <outlet property="moneyLabel" destination="RKW-Jo-u9Z" id="1EC-wr-Rqn"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="-263" y="-15"/>
