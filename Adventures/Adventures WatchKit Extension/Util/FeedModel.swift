@@ -67,11 +67,11 @@ struct Option: Codable {
 }
 
 struct Reward: Codable {
-    var factionPoints: Int? = 0
-    var exp: Float? = 0
-    var money: Int? = 0
+    var factionPoints: Int = 0
+    var exp: Double = 0
+    var money: Int = 0
     
-    init(factionPoints: Int=0, exp: Float=0, money: Int=0) {
+    init(factionPoints: Int=0, exp: Double=0, money: Int=0) {
         self.factionPoints = factionPoints
         self.exp = exp
         self.money = money

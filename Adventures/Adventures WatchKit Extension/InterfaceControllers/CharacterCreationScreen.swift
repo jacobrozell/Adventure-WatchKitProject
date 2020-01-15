@@ -27,7 +27,7 @@ class CharacterCreationScreen: WKInterfaceController {
             //GameConfig.userDefaults.setPlayerClass(to: pClass)
             GameConfig.chosenClass = true
             
-            navigate(to: GameConfig.profileViewID, from: self, shouldChangeRoot: true)
+            navigate(to: Navigation.homeID, from: self, shouldChangeRoot: true)
             
         }), WKAlertAction(title: "No", style: .cancel, handler: {
             return

@@ -15,7 +15,7 @@ enum Faction {
     case bad
 }
 
-class ScreenController: WKInterfaceController {
+class AdventureController: WKInterfaceController {
     @IBOutlet weak var textLabel: WKInterfaceLabel!
     @IBOutlet weak var subtextLabel: WKInterfaceLabel!
     
@@ -63,7 +63,7 @@ class ScreenController: WKInterfaceController {
                 GameConfig.button3Link = option.screenLink
                 GameConfig.rewards3 = option.rewards
             default:
-                print("wtf??????????\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\n\n\n\n\n\n\n\n\n")
+                print("problem in setupButtons->AdventureController")
             }
         }
     }
@@ -79,7 +79,7 @@ class ScreenController: WKInterfaceController {
             return false
         } else if link >= GameConfig.screenFeed.screens.count {
             return false
-        } else if link == 103 {
+        } else if link == -103 {
             adventureComplete = true
             return true
         }
@@ -87,16 +87,28 @@ class ScreenController: WKInterfaceController {
         return true
     }
     
+    private func giveRewards(with button: Int) {
+        switch button {
+        case 1:
+            GameConfig.__playerRewardsForAdventure.append(GameConfig.rewards1)
+        case 2:
+            GameConfig.__playerRewardsForAdventure.append(GameConfig.rewards2)
+        case 3:
+            GameConfig.__playerRewardsForAdventure.append(GameConfig.rewards3)
+        default:
+            print("problem with rewards")
+        }
+    }
+    
     // MARK: - IBActions
     @IBAction func option1Pressed() {
         if isLinkValid(GameConfig.button1Link) {
             if adventureComplete {
-                GameConfig.__playerRewardsForAdventure.append(GameConfig.rewards1)
-                // Go to rewards screen!!!!!!!!!
-                // remember to pop this controller and make home screen the root controller
+                giveRewards(with: 1)
+                navigate(to: Navigation.rewardID, from: self, shouldChangeRoot: true)
             } else {
                 currentScreenIndex = GameConfig.button1Link
-                GameConfig.__playerRewardsForAdventure.append(GameConfig.rewards1)
+                giveRewards(with: 1)
             }
         }
         self.awake(withContext: nil)
@@ -104,16 +116,26 @@ class ScreenController: WKInterfaceController {
     
     @IBAction func option2Pressed() {
         if isLinkValid(GameConfig.button2Link) {
-            currentScreenIndex = GameConfig.button2Link
-            GameConfig.__playerRewardsForAdventure.append(GameConfig.rewards2)
+            if adventureComplete {
+                giveRewards(with: 2)
+                navigate(to: Navigation.rewardID, from: self, shouldChangeRoot: true)
+            } else {
+                currentScreenIndex = GameConfig.button2Link
+                giveRewards(with: 2)
+            }
         }
         self.awake(withContext: nil)
     }
     
     @IBAction func option3Pressed() {
         if isLinkValid(GameConfig.button3Link) {
-            currentScreenIndex = GameConfig.button3Link
-            GameConfig.__playerRewardsForAdventure.append(GameConfig.rewards3)
+            if adventureComplete {
+                giveRewards(with: 3)
+                navigate(to: Navigation.rewardID, from: self, shouldChangeRoot: true)
+            } else {
+                currentScreenIndex = GameConfig.button3Link
+                giveRewards(with: 3)
+            }
         }
         self.awake(withContext: nil)
     }

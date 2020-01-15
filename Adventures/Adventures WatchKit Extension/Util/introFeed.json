@@ -365,7 +365,7 @@
         "good": [
           {
             "choice": "Get Rewards!",
-            "screenLink": 103,
+            "screenLink": -103,
             "rewards": {
               "factionPoints": 0,
               "exp": 20,
@@ -376,7 +376,7 @@
         "bad": [
           {
             "choice": "Get Rewards!",
-            "screenLink": 103,
+            "screenLink": -103,
             "rewards": {
               "factionPoints": 0,
               "exp": 20,

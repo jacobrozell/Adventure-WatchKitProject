@@ -55,10 +55,10 @@ class LoadingScreen: WKInterfaceController {
 //                }
             
             if !GameConfig.chosenClass {
-                navigate(to: GameConfig.characterCreationICID, from: self, shouldChangeRoot: true)
+                navigate(to: Navigation.classCreationID, from: self, shouldChangeRoot: true)
                 
             } else {
-                navigate(to: GameConfig.profileViewID, from: self, shouldChangeRoot: true)
+                navigate(to: Navigation.homeID, from: self, shouldChangeRoot: true)
             }
         })])
     }

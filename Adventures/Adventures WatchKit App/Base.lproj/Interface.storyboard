@@ -52,7 +52,7 @@
         <!--Home-->
         <scene sceneID="zmc-ck-FQi">
             <objects>
-                <controller identifier="profileView" title="Home" id="J9N-VU-chK" customClass="ProfileMainView" customModule="Adventures_WatchKit_Extension">
+                <controller identifier="homeScreen" title="Home" id="J9N-VU-chK" customClass="HomeScreen" customModule="Adventures_WatchKit_Extension">
                     <items>
                         <button width="1" alignment="left" title="Adventures" id="7SW-FL-Rsv">
                             <connections>
@@ -72,7 +72,7 @@
         <!--Adventure-->
         <scene sceneID="Yyt-1l-hJF">
             <objects>
-                <controller identifier="screenViewController" title="Adventure" id="5KE-sj-w1s" customClass="ScreenController" customModule="Adventures_WatchKit_Extension">
+                <controller identifier="screenViewController" title="Adventure" id="5KE-sj-w1s" customClass="AdventureController" customModule="Adventures_WatchKit_Extension">
                     <items>
                         <label width="1" alignment="left" text="Header text" textAlignment="center" numberOfLines="0" id="Bed-DB-BnE"/>
                         <label width="1" alignment="left" text="Sub text" textAlignment="center" numberOfLines="0" id="hs2-FW-4e7"/>
@@ -106,6 +106,45 @@
             </objects>
             <point key="canvasLocation" x="251" y="-15"/>
         </scene>
+        <!--Rewards-->
+        <scene sceneID="khs-md-1fs">
+            <objects>
+                <controller identifier="rewardScreen" title="Rewards" id="R8t-s5-IdF" customClass="RewardScreen" customModule="Adventures_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Rewards:" id="Z1A-ya-Mj9"/>
+                        <separator alignment="left" id="2dZ-2G-HeO">
+                            <color key="color" red="0.16862745100000001" green="0.23921568630000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <label width="1" alignment="left" text="Exp Points: " textAlignment="center" id="GvY-xZ-Lvu"/>
+                        <label width="1" alignment="left" text="0" textAlignment="center" id="xvx-yt-O5e"/>
+                        <separator alignment="left" id="GWn-kT-Bfd">
+                            <color key="color" red="0.16862745100000001" green="0.23921568630000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <label width="1" alignment="left" text="Faction Points: " textAlignment="center" id="viv-06-sm0"/>
+                        <label width="1" alignment="left" text="0" textAlignment="center" id="7wV-nu-iUb"/>
+                        <separator alignment="left" id="Una-kf-qUH">
+                            <color key="color" red="0.16862745100000001" green="0.23921568630000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <label width="1" alignment="left" text="Money:" textAlignment="center" id="SJX-rn-7Sd"/>
+                        <label width="1" alignment="left" text="$0" textAlignment="center" id="Pmg-WY-t0x"/>
+                        <separator alignment="left" id="eiQ-zu-VDo">
+                            <color key="color" red="0.16862745100000001" green="0.23921568630000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <button width="1" alignment="left" title="Home Screen" id="yIA-w6-yNi">
+                            <connections>
+                                <action selector="goToHomeScreenPressed" destination="R8t-s5-IdF" id="eUb-Xn-PoV"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="expPointsLabel" destination="xvx-yt-O5e" id="FhB-a0-yVv"/>
+                        <outlet property="factionPointsLabel" destination="7wV-nu-iUb" id="Io8-3s-fUE"/>
+                        <outlet property="moneyLabel" destination="Pmg-WY-t0x" id="hB6-Um-fSW"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="520" y="-15"/>
+        </scene>
         <!--Profile-->
         <scene sceneID="dPh-jP-JTO">
             <objects>
@@ -137,8 +176,10 @@
                         </separator>
                     </items>
                     <connections>
+                        <outlet property="classLabel" destination="yeS-X7-VzR" id="1oG-PW-zcR"/>
                         <outlet property="expLabel" destination="yEv-Jw-QCJ" id="OC1-j7-OeB"/>
                         <outlet property="factionPoints" destination="ld8-tt-lK2" id="t8m-cw-Oe0"/>
+                        <outlet property="levelLabel" destination="WZJ-fG-tKU" id="M9J-bD-Bxh"/>
                         <outlet property="moneyLabel" destination="RKW-Jo-u9Z" id="1EC-wr-Rqn"/>
                     </connections>
                 </controller>

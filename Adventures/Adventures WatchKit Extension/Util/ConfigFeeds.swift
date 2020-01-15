@@ -9,8 +9,9 @@
 import Foundation
 
 // THIS FILE NEEDS TO BE ADDED TO THE .gitignore
+// TESTING PURPOSES ONLY
 
 extension GameConfig {
     // API/Feed
-    static let introFeed = "https://api.myjson.com/bins/1d1s0q"
+    static let introFeed = "https://api.myjson.com/bins/1eqeyu"
 }

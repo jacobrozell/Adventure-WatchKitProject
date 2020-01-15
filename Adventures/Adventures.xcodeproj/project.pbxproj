@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		361606CB23C2D7EA00D8AA20 /* ScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361606CA23C2D7EA00D8AA20 /* ScreenController.swift */; };
 		361606CC23C2DFF900D8AA20 /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D66B5F23B69DFE006CC1BB /* LoadingScreen.swift */; };
-		361606CE23C2E23800D8AA20 /* ProfileMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361606CD23C2E23800D8AA20 /* ProfileMainView.swift */; };
+		361606CE23C2E23800D8AA20 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361606CD23C2E23800D8AA20 /* HomeScreen.swift */; };
 		3622347223CCFF2800530607 /* StatsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622347123CCFF2800530607 /* StatsController.swift */; };
 		3622347423CD0D7F00530607 /* introFeed.json in Resources */ = {isa = PBXBuildFile; fileRef = 3622347323CD0D7F00530607 /* introFeed.json */; };
+		3675E06723CF7DF900ACD78E /* RewardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3675E06623CF7DF900ACD78E /* RewardScreen.swift */; };
+		3675E06923CF826600ACD78E /* AdventureScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3675E06823CF826600ACD78E /* AdventureScreen.swift */; };
 		36D66B3323B671F2006CC1BB /* Adventures WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 36D66B3223B671F2006CC1BB /* Adventures WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		36D66B3923B671F2006CC1BB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36D66B3723B671F2006CC1BB /* Interface.storyboard */; };
 		36D66B3B23B671F4006CC1BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36D66B3A23B671F4006CC1BB /* Assets.xcassets */; };
@@ -69,10 +70,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		361606CA23C2D7EA00D8AA20 /* ScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenController.swift; sourceTree = "<group>"; };
-		361606CD23C2E23800D8AA20 /* ProfileMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainView.swift; sourceTree = "<group>"; };
+		361606CD23C2E23800D8AA20 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		3622347123CCFF2800530607 /* StatsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsController.swift; sourceTree = "<group>"; };
 		3622347323CD0D7F00530607 /* introFeed.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = introFeed.json; sourceTree = "<group>"; };
+		3675E06623CF7DF900ACD78E /* RewardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardScreen.swift; sourceTree = "<group>"; };
+		3675E06823CF826600ACD78E /* AdventureScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdventureScreen.swift; sourceTree = "<group>"; };
 		36D66B2E23B671F1006CC1BB /* Adventures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adventures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D66B3223B671F2006CC1BB /* Adventures WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adventures WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D66B3823B671F2006CC1BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -163,9 +165,10 @@
 			children = (
 				36D66B5F23B69DFE006CC1BB /* LoadingScreen.swift */,
 				36D66B6123B6A264006CC1BB /* CharacterCreationScreen.swift */,
-				361606CD23C2E23800D8AA20 /* ProfileMainView.swift */,
-				361606CA23C2D7EA00D8AA20 /* ScreenController.swift */,
+				3675E06823CF826600ACD78E /* AdventureScreen.swift */,
+				361606CD23C2E23800D8AA20 /* HomeScreen.swift */,
 				3622347123CCFF2800530607 /* StatsController.swift */,
+				3675E06623CF7DF900ACD78E /* RewardScreen.swift */,
 			);
 			path = InterfaceControllers;
 			sourceTree = "<group>";
@@ -299,16 +302,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				36D66B6223B6A264006CC1BB /* CharacterCreationScreen.swift in Sources */,
-				361606CB23C2D7EA00D8AA20 /* ScreenController.swift in Sources */,
 				36D66B4B23B671F4006CC1BB /* NotificationController.swift in Sources */,
+				3675E06923CF826600ACD78E /* AdventureScreen.swift in Sources */,
 				36D66B7223B94327006CC1BB /* Extensions.swift in Sources */,
 				36D66B4923B671F4006CC1BB /* ExtensionDelegate.swift in Sources */,
 				3622347223CCFF2800530607 /* StatsController.swift in Sources */,
+				3675E06723CF7DF900ACD78E /* RewardScreen.swift in Sources */,
 				36D66B7023B9426A006CC1BB /* ConfigFeeds.swift in Sources */,
 				36D66B5E23B67890006CC1BB /* FeedModel.swift in Sources */,
 				36D66B6C23B939B6006CC1BB /* GameConfig.swift in Sources */,
 				361606CC23C2DFF900D8AA20 /* LoadingScreen.swift in Sources */,
-				361606CE23C2E23800D8AA20 /* ProfileMainView.swift in Sources */,
+				361606CE23C2E23800D8AA20 /* HomeScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

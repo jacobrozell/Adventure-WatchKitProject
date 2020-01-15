@@ -13,13 +13,15 @@ class StatsController: WKInterfaceController {
     @IBOutlet var expLabel: WKInterfaceLabel!
     @IBOutlet var factionPoints: WKInterfaceLabel!
     @IBOutlet var moneyLabel: WKInterfaceLabel!
+    @IBOutlet var classLabel: WKInterfaceLabel!
+    @IBOutlet var levelLabel: WKInterfaceLabel!
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: nil)
         
+        classLabel.setText(GameConfig.playerClassName)
         expLabel.setText("\(GameConfig.__playerExp)")
         factionPoints.setText("\(GameConfig.__playerFactionPoints)")
-        //moneyLabel.setText("$ \(GameConfig.__playerMoney)")
-        
+        moneyLabel.setText("$ \(GameConfig.__playerMoney)")
     }
 }

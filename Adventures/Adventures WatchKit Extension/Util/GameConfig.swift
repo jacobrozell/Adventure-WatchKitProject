@@ -21,15 +21,11 @@ enum GameConfig {
 
     public static var chosenClass = false
     static var playerClass: PlayableClass = .unset
-
-    public static var characterCreationICID = "characterCreationScreen"
+    static var playerClassName = "\(GameConfig.playerClass.rawValue.capitalized)"
+    
     public static var userDefaults = UserDefaults.standard
     
-    public static var screenID = "screenViewController"
     public static var screenFeed = ScreenFeed(screens: [])
-    
-    public static var profileViewID = "profileView"
-    public static var statsScreen = "statsController"
     
     public static var button1Link = -99
     public static var button2Link = -99
@@ -44,12 +40,27 @@ enum GameConfig {
     // Probably need to make these keys somewhere else
     public static var __playerLevel = 1
     public static var __playerMoney = 0
-    public static var __playerExp: Float = 0.0
+    public static var __playerExp = 0.0
     public static var __playerFactionPoints = 0
 }
 
 enum UserDefaultsKeys {
     public static var playerClass = "playerClass"
+}
+
+enum Navigation {
+    public static var homeID = "homeScreen"
+    public static var profileID = "statsController"
+    public static var classCreationID = "characterCreationScreen"
+    public static var adventureID = "screenViewController"
+    public static var rewardID = "rewardScreen"
+    
+    func navigate(to id: String, from controller: WKInterfaceController, shouldChangeRoot: Bool=false) {
+        if shouldChangeRoot {
+            WKInterfaceController.reloadRootControllers(withNamesAndContexts: [(name: id, context: [:] as AnyObject)])
+        }
+        controller.pushController(withName: id, context: nil)
+    }
 }
 
 func navigate(to id: String, from controller: WKInterfaceController, shouldChangeRoot: Bool=false) {

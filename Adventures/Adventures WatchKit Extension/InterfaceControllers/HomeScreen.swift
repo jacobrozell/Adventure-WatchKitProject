@@ -10,17 +10,13 @@ import UIKit
 import WatchKit
 import Foundation
 
-class ProfileMainView: WKInterfaceController {
+class HomeScreen: WKInterfaceController {
     @IBAction func adventuresPressed() {
-        pushController(withName: GameConfig.screenID, context: nil)
-        //navigate(to: GameConfig.screenID, from: self, shouldChangeRoot: true)
+        //pushController(withName: Navigation.adventureID, context: nil)
+        navigate(to: Navigation.adventureID, from: self, shouldChangeRoot: true)
     }
     
     @IBAction func profileButtonPressed() {
-        pushController(withName: GameConfig.statsScreen, context: nil)
+        pushController(withName: Navigation.profileID, context: nil)
     }
-    
-    
-    
-    
 }
