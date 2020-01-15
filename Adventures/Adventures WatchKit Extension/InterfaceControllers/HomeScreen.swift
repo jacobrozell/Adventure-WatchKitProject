@@ -13,7 +13,7 @@ import Foundation
 class HomeScreen: WKInterfaceController {
     @IBAction func adventuresPressed() {
         //pushController(withName: Navigation.adventureID, context: nil)
-        navigate(to: Navigation.adventureID, from: self, shouldChangeRoot: true)
+        Navigation.navigate(to: Navigation.adventureID, from: self, shouldChangeRoot: true)
     }
     
     @IBAction func profileButtonPressed() {

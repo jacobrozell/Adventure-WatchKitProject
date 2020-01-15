@@ -87,6 +87,32 @@ class AdventureController: WKInterfaceController {
         return true
     }
     
+    private func buttonPressed(with id: Int) {
+        var link: Int = 0
+        
+        switch id {
+        case 1:
+            link = GameConfig.button1Link
+        case 2:
+            link = GameConfig.button2Link
+        case 3:
+            link = GameConfig.button3Link
+        default:
+            print("buttonPressed Problem")
+        }
+        
+        if isLinkValid(link) {
+            if adventureComplete {
+                giveRewards(with: id)
+                Navigation.navigate(to: Navigation.rewardID, from: self, shouldChangeRoot: true)
+            } else {
+                currentScreenIndex = GameConfig.button1Link
+                giveRewards(with: id)
+            }
+        }
+        self.awake(withContext: nil)
+    }
+    
     private func giveRewards(with button: Int) {
         switch button {
         case 1:
@@ -102,41 +128,14 @@ class AdventureController: WKInterfaceController {
     
     // MARK: - IBActions
     @IBAction func option1Pressed() {
-        if isLinkValid(GameConfig.button1Link) {
-            if adventureComplete {
-                giveRewards(with: 1)
-                navigate(to: Navigation.rewardID, from: self, shouldChangeRoot: true)
-            } else {
-                currentScreenIndex = GameConfig.button1Link
-                giveRewards(with: 1)
-            }
-        }
-        self.awake(withContext: nil)
+        buttonPressed(with: 1)
     }
     
     @IBAction func option2Pressed() {
-        if isLinkValid(GameConfig.button2Link) {
-            if adventureComplete {
-                giveRewards(with: 2)
-                navigate(to: Navigation.rewardID, from: self, shouldChangeRoot: true)
-            } else {
-                currentScreenIndex = GameConfig.button2Link
-                giveRewards(with: 2)
-            }
-        }
-        self.awake(withContext: nil)
+        buttonPressed(with: 2)
     }
     
     @IBAction func option3Pressed() {
-        if isLinkValid(GameConfig.button3Link) {
-            if adventureComplete {
-                giveRewards(with: 3)
-                navigate(to: Navigation.rewardID, from: self, shouldChangeRoot: true)
-            } else {
-                currentScreenIndex = GameConfig.button3Link
-                giveRewards(with: 3)
-            }
-        }
-        self.awake(withContext: nil)
+        buttonPressed(with: 3)
     }
 }

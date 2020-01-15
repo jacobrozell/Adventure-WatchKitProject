@@ -55,19 +55,12 @@ enum Navigation {
     public static var adventureID = "screenViewController"
     public static var rewardID = "rewardScreen"
     
-    func navigate(to id: String, from controller: WKInterfaceController, shouldChangeRoot: Bool=false) {
+    public static func navigate(to id: String, from controller: WKInterfaceController, shouldChangeRoot: Bool=false) {
         if shouldChangeRoot {
             WKInterfaceController.reloadRootControllers(withNamesAndContexts: [(name: id, context: [:] as AnyObject)])
         }
         controller.pushController(withName: id, context: nil)
     }
-}
-
-func navigate(to id: String, from controller: WKInterfaceController, shouldChangeRoot: Bool=false) {
-    if shouldChangeRoot {
-        WKInterfaceController.reloadRootControllers(withNamesAndContexts: [(name: id, context: [:] as AnyObject)])
-    }
-    controller.pushController(withName: id, context: nil)
 }
 
 func leaveAdventure(vc self: WKInterfaceController) {
