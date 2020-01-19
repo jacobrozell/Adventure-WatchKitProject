@@ -17,11 +17,18 @@ enum PlayableClass: String, Codable {
     case unset = "unset"
 }
 
-enum GameConfig {
+struct PlayerStats: Codable {
+    public static var __chosenClass = false
+    public static var __playerClass: PlayableClass = .unset
+    public static var __playerRewardsForAdventure: [Reward] = []
+    public static var __playerLevel = 1
+    public static var __playerMoney = 0
+    public static var __playerExp = 0.0
+    public static var __playerFactionPoints = 0
+}
 
-    public static var chosenClass = false
-    static var playerClass: PlayableClass = .unset
-    static var playerClassName = "\(GameConfig.playerClass.rawValue.capitalized)"
+enum GameConfig {
+    static var playerClassName = "\(PlayerStats.__playerClass.rawValue.capitalized)"
     
     public static var userDefaults = UserDefaults.standard
     
@@ -35,13 +42,7 @@ enum GameConfig {
     public static var rewards2: Reward = Reward()
     public static var rewards3: Reward = Reward()
     
-    public static var __playerRewardsForAdventure: [Reward] = []
     
-    // Probably need to make these keys somewhere else
-    public static var __playerLevel = 1
-    public static var __playerMoney = 0
-    public static var __playerExp = 0.0
-    public static var __playerFactionPoints = 0
 }
 
 enum UserDefaultsKeys {

@@ -23,9 +23,9 @@ class CharacterCreationScreen: WKInterfaceController {
     func chooseClass(with pClass: PlayableClass) {
         self.presentAlert(withTitle: "\(pClass.rawValue.capitalized) Selected!", message: "Are you sure?", preferredStyle: .alert, actions: [WKAlertAction(title: "Yes", style: .default, handler: {
             
-            GameConfig.playerClass = pClass
+            PlayerStats.__playerClass = pClass
             //GameConfig.userDefaults.setPlayerClass(to: pClass)
-            GameConfig.chosenClass = true
+            PlayerStats.__chosenClass = true
             
             Navigation.navigate(to: Navigation.homeID, from: self, shouldChangeRoot: true)
             

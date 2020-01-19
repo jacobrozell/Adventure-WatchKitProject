@@ -57,7 +57,7 @@ class LoadingScreen: WKInterfaceController {
 //
 //                }
             
-            if !GameConfig.chosenClass {
+            if !PlayerStats.__chosenClass {
                 Navigation.navigate(to: Navigation.classCreationID, from: self, shouldChangeRoot: true)
                 
             } else {

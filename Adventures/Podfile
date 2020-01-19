@@ -1,18 +1,18 @@
 def shared_pods
-    pod 'UserDefaultsStore'
+    pod 'Default'
 end
 
 target 'Adventures' do
-  platform :watchos, '2.0'
+  platform :watchos, '4.0'
   shared_pods
 end
 
 target 'Adventures WatchKit App' do
-  platform :watchos, '2.0'
+  platform :watchos, '4.0'
   shared_pods
 end
 
 target 'Adventures WatchKit Extension' do
- platform :watchos, '2.0'
+ platform :watchos, '4.0'
  shared_pods
 end

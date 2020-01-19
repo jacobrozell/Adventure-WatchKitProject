@@ -36,7 +36,7 @@ class AdventureController: WKInterfaceController {
         button2.setHidden(true)
         button3.setHidden(true)
         
-        faction = GameConfig.playerClass == .mage ? .good : .bad
+        faction = PlayerStats.__playerClass == .mage ? .good : .bad
         currentScreen = GameConfig.screenFeed.screens[currentScreenIndex]
         options = faction == .good ? GameConfig.screenFeed.screens[currentScreenIndex].options.good : GameConfig.screenFeed.screens[currentScreenIndex].options.bad
         
@@ -116,11 +116,11 @@ class AdventureController: WKInterfaceController {
     private func giveRewards(with button: Int) {
         switch button {
         case 1:
-            GameConfig.__playerRewardsForAdventure.append(GameConfig.rewards1)
+            PlayerStats.__playerRewardsForAdventure.append(GameConfig.rewards1)
         case 2:
-            GameConfig.__playerRewardsForAdventure.append(GameConfig.rewards2)
+            PlayerStats.__playerRewardsForAdventure.append(GameConfig.rewards2)
         case 3:
-            GameConfig.__playerRewardsForAdventure.append(GameConfig.rewards3)
+            PlayerStats.__playerRewardsForAdventure.append(GameConfig.rewards3)
         default:
             print("problem with rewards")
         }

@@ -1,11 +1,11 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## UserDefaultsStore
+## Default
 
 MIT License
 
-Copyright (c) 2018-Present Omar Albeik
+Copyright (c) 2017 Nicholas Maccharoli 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

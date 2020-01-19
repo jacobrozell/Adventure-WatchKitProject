@@ -33,7 +33,7 @@ class RewardScreen: WKInterfaceController {
     
     // MARK: - Functions
     private func calcRewards() {
-        for reward in GameConfig.__playerRewardsForAdventure {
+        for reward in PlayerStats.__playerRewardsForAdventure {
             expToGive += reward.exp
             factionPointsToGive += reward.factionPoints
             moneyToGive += reward.money
@@ -42,9 +42,9 @@ class RewardScreen: WKInterfaceController {
     }
     
     private func giveRewardsToPlayer() {
-        GameConfig.__playerExp += expToGive
-        GameConfig.__playerFactionPoints += factionPointsToGive
-        GameConfig.__playerMoney += moneyToGive
+        PlayerStats.__playerExp += expToGive
+        PlayerStats.__playerFactionPoints += factionPointsToGive
+        PlayerStats.__playerMoney += moneyToGive
         
         // Check to see if leveled up
     }

@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double UserDefaultsStoreVersionNumber;
-FOUNDATION_EXPORT const unsigned char UserDefaultsStoreVersionString[];
+FOUNDATION_EXPORT double DefaultVersionNumber;
+FOUNDATION_EXPORT const unsigned char DefaultVersionString[];
 

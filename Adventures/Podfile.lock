@@ -1,16 +1,16 @@
 PODS:
-  - UserDefaultsStore (1.4.3)
+  - Default (3.0.0)
 
 DEPENDENCIES:
-  - UserDefaultsStore
+  - Default
 
 SPEC REPOS:
   trunk:
-    - UserDefaultsStore
+    - Default
 
 SPEC CHECKSUMS:
-  UserDefaultsStore: 833be1631cd7030329b08390fbad715b708b992a
+  Default: df6f5067d92a350e908125bf269a7317df86b3bb
 
-PODFILE CHECKSUM: 5c53a58f5639b3b32167305a8ece45c5fddb7b79
+PODFILE CHECKSUM: 10610bb7d6ab1b1efe1f7e17ff09397befa967b9
 
 COCOAPODS: 1.8.4
