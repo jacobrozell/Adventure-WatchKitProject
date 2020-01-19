@@ -20,21 +20,24 @@ class LoadingScreen: WKInterfaceController {
     }
 
     func downloadFeed() {
-        let url = URL(string: GameConfig.introFeed)
-        
-        let session = URLSession.shared.dataTask(with: url!, completionHandler : { (data, response, error) -> Void in
-            
-            if error != nil {
-                print(String(describing: error?.localizedDescription))
-                return
-            }
-            
-            guard let data = data else { return }
-
-            self.screenFeed = ScreenParser().parseObjectOfScreenFeedFromData(data)
-            self.checkDownload()
-        })
-        session.resume()
+        let data = readJSONFromFile(fileName: "introFeed")
+        self.screenFeed = ScreenParser().parseObjectOfScreenFeedFromData(data)
+        self.checkDownload()
+//        let url = URL(string: GameConfig.introFeed)
+//
+//        let session = URLSession.shared.dataTask(with: url!, completionHandler : { (data, response, error) -> Void in
+//
+//            if error != nil {
+//                print(String(describing: error?.localizedDescription))
+//                return
+//            }
+//
+//            guard let data = data else { return }
+//
+//            self.screenFeed = ScreenParser().parseObjectOfScreenFeedFromData(data)
+//            self.checkDownload()
+//        })
+//        session.resume()
     }
     
     func checkDownload() {

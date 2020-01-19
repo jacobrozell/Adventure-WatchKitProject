@@ -73,3 +73,16 @@ func leaveAdventure(vc self: WKInterfaceController) {
         return
     })])
 }
+
+func readJSONFromFile(fileName: String) -> Data? {
+    var data: Data? = Data()
+    if let path = Bundle.main.path(forResource: fileName, ofType: "json") {
+        do {
+            let fileUrl = URL(fileURLWithPath: path)
+            data = try Data(contentsOf: fileUrl, options: .mappedIfSafe)
+        } catch {
+            // Handle error here
+        }
+    }
+    return data
+}

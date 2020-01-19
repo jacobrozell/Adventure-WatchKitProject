@@ -13,5 +13,5 @@ import Foundation
 
 extension GameConfig {
     // API/Feed
-    static let introFeed = "https://api.myjson.com/bins/1eqeyu"
+    static let introFeed = ""
 }
