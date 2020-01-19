@@ -64,10 +64,26 @@
                                 <action selector="profileButtonPressed" destination="J9N-VU-chK" id="p7g-lJ-qJP"/>
                             </connections>
                         </button>
+                        <button width="1" alignment="left" title="Daily Task" id="YUs-tA-YOj">
+                            <connections>
+                                <action selector="dailyPressed" destination="J9N-VU-chK" id="1Kc-2a-hPL"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
             <point key="canvasLocation" x="-3" y="-15"/>
+        </scene>
+        <!--dailyTest-->
+        <scene sceneID="nZn-yY-sj1">
+            <objects>
+                <controller identifier="dailyTest" id="s7M-vh-iQh" customClass="Daily" customModule="Adventures_WatchKit_Extension">
+                    <items>
+                        <activity alignment="left" id="ABC-dI-bim"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-9" y="284"/>
         </scene>
         <!--Adventure-->
         <scene sceneID="Yyt-1l-hJF">

@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		151EE19FF5C19E6F9A9526D1 /* libPods-Adventures.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C71EC4E8A92263BB3BA04A39 /* libPods-Adventures.a */; };
 		361606CC23C2DFF900D8AA20 /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D66B5F23B69DFE006CC1BB /* LoadingScreen.swift */; };
 		361606CE23C2E23800D8AA20 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361606CD23C2E23800D8AA20 /* HomeScreen.swift */; };
 		3622347223CCFF2800530607 /* StatsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622347123CCFF2800530607 /* StatsController.swift */; };
 		3622347423CD0D7F00530607 /* introFeed.json in Resources */ = {isa = PBXBuildFile; fileRef = 3622347323CD0D7F00530607 /* introFeed.json */; };
 		3675E06723CF7DF900ACD78E /* RewardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3675E06623CF7DF900ACD78E /* RewardScreen.swift */; };
 		3675E06923CF826600ACD78E /* AdventureScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3675E06823CF826600ACD78E /* AdventureScreen.swift */; };
+		36B5C62123D4CA4A00D9808E /* Daily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B5C62023D4CA4A00D9808E /* Daily.swift */; };
 		36D66B3323B671F2006CC1BB /* Adventures WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 36D66B3223B671F2006CC1BB /* Adventures WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		36D66B3923B671F2006CC1BB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36D66B3723B671F2006CC1BB /* Interface.storyboard */; };
 		36D66B3B23B671F4006CC1BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36D66B3A23B671F4006CC1BB /* Assets.xcassets */; };
@@ -25,6 +27,8 @@
 		36D66B6C23B939B6006CC1BB /* GameConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D66B6B23B939B6006CC1BB /* GameConfig.swift */; };
 		36D66B7023B9426A006CC1BB /* ConfigFeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D66B6F23B9426A006CC1BB /* ConfigFeeds.swift */; };
 		36D66B7223B94327006CC1BB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D66B7123B94327006CC1BB /* Extensions.swift */; };
+		67217D222141EDB3F094D725 /* libPods-Adventures WatchKit App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4785D0A71F5F4B8C72B0D3 /* libPods-Adventures WatchKit App.a */; };
+		C1870FC24623867DF3338791 /* libPods-Adventures WatchKit Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5243A1CBCD872491F2D9FBC7 /* libPods-Adventures WatchKit Extension.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,11 +74,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		152A2BBB36C133AA0EC59CDC /* Pods-Adventures.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adventures.release.xcconfig"; path = "Target Support Files/Pods-Adventures/Pods-Adventures.release.xcconfig"; sourceTree = "<group>"; };
+		2E4785D0A71F5F4B8C72B0D3 /* libPods-Adventures WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Adventures WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		361606CD23C2E23800D8AA20 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		3622347123CCFF2800530607 /* StatsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsController.swift; sourceTree = "<group>"; };
 		3622347323CD0D7F00530607 /* introFeed.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = introFeed.json; sourceTree = "<group>"; };
 		3675E06623CF7DF900ACD78E /* RewardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardScreen.swift; sourceTree = "<group>"; };
 		3675E06823CF826600ACD78E /* AdventureScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdventureScreen.swift; sourceTree = "<group>"; };
+		36B5C62023D4CA4A00D9808E /* Daily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily.swift; sourceTree = "<group>"; };
 		36D66B2E23B671F1006CC1BB /* Adventures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adventures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D66B3223B671F2006CC1BB /* Adventures WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adventures WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D66B3823B671F2006CC1BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -92,6 +99,13 @@
 		36D66B6B23B939B6006CC1BB /* GameConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConfig.swift; sourceTree = "<group>"; };
 		36D66B6F23B9426A006CC1BB /* ConfigFeeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigFeeds.swift; sourceTree = "<group>"; };
 		36D66B7123B94327006CC1BB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5243A1CBCD872491F2D9FBC7 /* libPods-Adventures WatchKit Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Adventures WatchKit Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56B0AC13AE81300F0DE83052 /* Pods-Adventures.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adventures.debug.xcconfig"; path = "Target Support Files/Pods-Adventures/Pods-Adventures.debug.xcconfig"; sourceTree = "<group>"; };
+		5A55D359EB5BE509C0A046C8 /* Pods-Adventures WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adventures WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-Adventures WatchKit Extension/Pods-Adventures WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		666F5149D5B3AB63A137E91F /* Pods-Adventures WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adventures WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-Adventures WatchKit App/Pods-Adventures WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		C71EC4E8A92263BB3BA04A39 /* libPods-Adventures.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Adventures.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC0F11A5AEDDA27B8A7931AD /* Pods-Adventures WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adventures WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-Adventures WatchKit App/Pods-Adventures WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		F0263E073714640EE8C2C06C /* Pods-Adventures WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adventures WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-Adventures WatchKit Extension/Pods-Adventures WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +113,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1870FC24623867DF3338791 /* libPods-Adventures WatchKit Extension.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F345F978EF2D1F5A04DD452C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67217D222141EDB3F094D725 /* libPods-Adventures WatchKit App.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F90E4BC20F29DB27D5F395B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				151EE19FF5C19E6F9A9526D1 /* libPods-Adventures.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +142,8 @@
 				36D66B3623B671F2006CC1BB /* Adventures WatchKit App */,
 				36D66B4523B671F4006CC1BB /* Adventures WatchKit Extension */,
 				36D66B2F23B671F1006CC1BB /* Products */,
+				CAB86627ADE41346A40EDDCC /* Pods */,
+				92EA3A83D602CA0BB0C008F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -169,8 +202,32 @@
 				361606CD23C2E23800D8AA20 /* HomeScreen.swift */,
 				3622347123CCFF2800530607 /* StatsController.swift */,
 				3675E06623CF7DF900ACD78E /* RewardScreen.swift */,
+				36B5C62023D4CA4A00D9808E /* Daily.swift */,
 			);
 			path = InterfaceControllers;
+			sourceTree = "<group>";
+		};
+		92EA3A83D602CA0BB0C008F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C71EC4E8A92263BB3BA04A39 /* libPods-Adventures.a */,
+				2E4785D0A71F5F4B8C72B0D3 /* libPods-Adventures WatchKit App.a */,
+				5243A1CBCD872491F2D9FBC7 /* libPods-Adventures WatchKit Extension.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAB86627ADE41346A40EDDCC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56B0AC13AE81300F0DE83052 /* Pods-Adventures.debug.xcconfig */,
+				152A2BBB36C133AA0EC59CDC /* Pods-Adventures.release.xcconfig */,
+				666F5149D5B3AB63A137E91F /* Pods-Adventures WatchKit App.debug.xcconfig */,
+				DC0F11A5AEDDA27B8A7931AD /* Pods-Adventures WatchKit App.release.xcconfig */,
+				F0263E073714640EE8C2C06C /* Pods-Adventures WatchKit Extension.debug.xcconfig */,
+				5A55D359EB5BE509C0A046C8 /* Pods-Adventures WatchKit Extension.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,8 +237,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36D66B5A23B671F5006CC1BB /* Build configuration list for PBXNativeTarget "Adventures" */;
 			buildPhases = (
+				1655D166EDAB3D8715592A3B /* [CP] Check Pods Manifest.lock */,
 				36D66B2C23B671F1006CC1BB /* Resources */,
 				36D66B5923B671F5006CC1BB /* Embed Watch Content */,
+				F90E4BC20F29DB27D5F395B2 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,8 +256,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36D66B5623B671F5006CC1BB /* Build configuration list for PBXNativeTarget "Adventures WatchKit App" */;
 			buildPhases = (
+				862D6CF632D14DB406A856E4 /* [CP] Check Pods Manifest.lock */,
 				36D66B3023B671F2006CC1BB /* Resources */,
 				36D66B5523B671F5006CC1BB /* Embed App Extensions */,
+				F345F978EF2D1F5A04DD452C /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,6 +275,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36D66B5223B671F5006CC1BB /* Build configuration list for PBXNativeTarget "Adventures WatchKit Extension" */;
 			buildPhases = (
+				AC4D5342330CFB39202E2325 /* [CP] Check Pods Manifest.lock */,
 				36D66B3D23B671F4006CC1BB /* Sources */,
 				36D66B3E23B671F4006CC1BB /* Frameworks */,
 				36D66B3F23B671F4006CC1BB /* Resources */,
@@ -296,6 +358,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1655D166EDAB3D8715592A3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Adventures-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		862D6CF632D14DB406A856E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Adventures WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC4D5342330CFB39202E2325 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Adventures WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		36D66B3D23B671F4006CC1BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -312,6 +443,7 @@
 				36D66B5E23B67890006CC1BB /* FeedModel.swift in Sources */,
 				36D66B6C23B939B6006CC1BB /* GameConfig.swift in Sources */,
 				361606CC23C2DFF900D8AA20 /* LoadingScreen.swift in Sources */,
+				36B5C62123D4CA4A00D9808E /* Daily.swift in Sources */,
 				361606CE23C2E23800D8AA20 /* HomeScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +589,7 @@
 		};
 		36D66B5323B671F5006CC1BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0263E073714640EE8C2C06C /* Pods-Adventures WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -479,6 +612,7 @@
 		};
 		36D66B5423B671F5006CC1BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A55D359EB5BE509C0A046C8 /* Pods-Adventures WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -501,6 +635,7 @@
 		};
 		36D66B5723B671F5006CC1BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 666F5149D5B3AB63A137E91F /* Pods-Adventures WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -522,6 +657,7 @@
 		};
 		36D66B5823B671F5006CC1BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC0F11A5AEDDA27B8A7931AD /* Pods-Adventures WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -543,6 +679,7 @@
 		};
 		36D66B5B23B671F5006CC1BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56B0AC13AE81300F0DE83052 /* Pods-Adventures.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -557,6 +694,7 @@
 		};
 		36D66B5C23B671F5006CC1BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 152A2BBB36C133AA0EC59CDC /* Pods-Adventures.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

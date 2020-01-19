@@ -12,11 +12,14 @@ import Foundation
 
 class HomeScreen: WKInterfaceController {
     @IBAction func adventuresPressed() {
-        //pushController(withName: Navigation.adventureID, context: nil)
         Navigation.navigate(to: Navigation.adventureID, from: self, shouldChangeRoot: true)
     }
     
     @IBAction func profileButtonPressed() {
-        pushController(withName: Navigation.profileID, context: nil)
+        Navigation.navigate(to: Navigation.profileID, from: self)
+    }
+    
+    @IBAction func dailyPressed() {
+        Navigation.navigate(to: Navigation.dailyTestID, from: self)
     }
 }
