@@ -7,49 +7,103 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03EC260D65856E7451C9F8881681C61F /* Pods-Adventures-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 593106C0637CAA08621ED25DC143C4C9 /* Pods-Adventures-dummy.m */; };
-		D02A1B92EA47B508E11B219AF4570DC9 /* Pods-Adventures WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7629006B612B6AD632B3A86C1D1B99 /* Pods-Adventures WatchKit Extension-dummy.m */; };
-		F964B36F7E1275AF2EC64C67E1FF722B /* Pods-Adventures WatchKit App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC8FAA30E62B3F0BAA568EEC2BB6A49 /* Pods-Adventures WatchKit App-dummy.m */; };
+		056FC99BA1100C6F0EAF791F1A2E9016 /* Pods-Adventures-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0569AE5FA360500AF03F3354349984C6 /* Pods-Adventures-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1B0AC8EF66F36B00BE986884AB376873 /* Pods-Adventures WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D98D0651DAC1BD59D05F9A60022FA3C4 /* Pods-Adventures WatchKit Extension-dummy.m */; };
+		633D9C96DF77DD7A95084AA24D600B7E /* UserDefaultsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D9FDE608349F63A4E23752B5DF7C1 /* UserDefaultsStore.swift */; };
+		65CFBD1B94BE45D2AAE2EBD119B999B4 /* UserDefaultsStore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A30957E21DBB5BB7019D9C0C30B658 /* UserDefaultsStore-dummy.m */; };
+		6BE2FCB45950C44352048A4A59A1A34F /* Pods-Adventures WatchKit Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BAEF1DB2BDDD7579B6B560F4148C32EA /* Pods-Adventures WatchKit Extension-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7061064909FAD96DA65162552E4B6765 /* SingleUserDefaultsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D3C3B1C4DD1BE65BC08DCFA45D7225 /* SingleUserDefaultsStore.swift */; };
+		862C2743E3AD9A4EDA88BA9F10EC52B8 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B733318EFBE106C2462B42456F544A /* Identifiable.swift */; };
+		8A14DEEB9B99481B951EEEF457C3D30A /* UserDefaultsStore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AB15FD28B5645FAD471CE0CAD1F5734 /* UserDefaultsStore-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		90C82B805FD484FBF93B8505C95332DF /* Pods-Adventures WatchKit App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1666142EC97E760A4C277A51C4492BB7 /* Pods-Adventures WatchKit App-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AC5624B5F239EB763F310343CE754469 /* Pods-Adventures-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D3EDE1985A7CD955D23E69FD436C4C /* Pods-Adventures-dummy.m */; };
+		B54688FD10073B14B4BA05E6F6C13327 /* Pods-Adventures WatchKit App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E477F1663052F424279F90AEA1E2A149 /* Pods-Adventures WatchKit App-dummy.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E264B2600E77DA106CE0FA297AEF9BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18BB9F72CD23264E98BCA91A99917C56;
+			remoteInfo = UserDefaultsStore;
+		};
+		B08F391801855D18804B494381A48E10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18BB9F72CD23264E98BCA91A99917C56;
+			remoteInfo = UserDefaultsStore;
+		};
+		BF4004B5C6EC9361A307D7430D5FDF98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18BB9F72CD23264E98BCA91A99917C56;
+			remoteInfo = UserDefaultsStore;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		03EF0905F4C735BAAF5C6A8B56E2B0F9 /* libPods-Adventures WatchKit Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Adventures WatchKit Extension.a"; path = "libPods-Adventures WatchKit Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2453D5C7D33CCCCC6F424185C5924E15 /* Pods-Adventures.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Adventures.release.xcconfig"; sourceTree = "<group>"; };
-		30A1FB8420A3A68553376944242DDA24 /* Pods-Adventures-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Adventures-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3A4F85299687892B308EF504D62C80B0 /* Pods-Adventures-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Adventures-acknowledgements.plist"; sourceTree = "<group>"; };
-		407BE2B040C088B719C7726509F7849A /* Pods-Adventures WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Adventures WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
-		593106C0637CAA08621ED25DC143C4C9 /* Pods-Adventures-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Adventures-dummy.m"; sourceTree = "<group>"; };
-		6E8DE86D8F2D221AA4075FE6EF0BEE66 /* Pods-Adventures WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Adventures WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		043715F020E8DB5EEC0676F4217A4C20 /* UserDefaultsStore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UserDefaultsStore-prefix.pch"; sourceTree = "<group>"; };
+		0569AE5FA360500AF03F3354349984C6 /* Pods-Adventures-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Adventures-umbrella.h"; sourceTree = "<group>"; };
+		0F0D9FDE608349F63A4E23752B5DF7C1 /* UserDefaultsStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserDefaultsStore.swift; path = Sources/UserDefaultsStore.swift; sourceTree = "<group>"; };
+		13B733318EFBE106C2462B42456F544A /* Identifiable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifiable.swift; path = Sources/Identifiable.swift; sourceTree = "<group>"; };
+		1666142EC97E760A4C277A51C4492BB7 /* Pods-Adventures WatchKit App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Adventures WatchKit App-umbrella.h"; sourceTree = "<group>"; };
+		16D3C3B1C4DD1BE65BC08DCFA45D7225 /* SingleUserDefaultsStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SingleUserDefaultsStore.swift; path = Sources/SingleUserDefaultsStore.swift; sourceTree = "<group>"; };
+		193066F5F7D47710BCAB8E7DE57C88DF /* Pods-Adventures WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Adventures WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
+		1C4008737E877AF6EC6F7397FA8110BB /* Pods-Adventures WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Adventures WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		25EC44E7438DC6301131DC8A28F3FC0F /* Pods-Adventures-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Adventures-acknowledgements.plist"; sourceTree = "<group>"; };
+		4358029AE2C20048E4314B28EAA9795A /* Pods-Adventures WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Adventures WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		4DD99A82BA87ABF9D23C6953298C163F /* Pods-Adventures WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Adventures WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		65D3EDE1985A7CD955D23E69FD436C4C /* Pods-Adventures-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Adventures-dummy.m"; sourceTree = "<group>"; };
+		6AE836BB30B6F13D863E70955A37AF69 /* Pods-Adventures-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Adventures-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6E009342F2B3892BFBF15F42BAC69EAE /* Pods-Adventures.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Adventures.modulemap"; sourceTree = "<group>"; };
+		7AB15FD28B5645FAD471CE0CAD1F5734 /* UserDefaultsStore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UserDefaultsStore-umbrella.h"; sourceTree = "<group>"; };
 		7F42A88B371B67E643D71A63A5FD7D70 /* libPods-Adventures.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Adventures.a"; path = "libPods-Adventures.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F196B1BAD51B916A4607917E4B768E4 /* Pods-Adventures WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Adventures WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		92923087A435C7561D0315202079E1CE /* Pods-Adventures WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Adventures WatchKit Extension.modulemap"; sourceTree = "<group>"; };
+		964E010B518237150639E88AC0D7BB7A /* libUserDefaultsStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libUserDefaultsStore.a; path = libUserDefaultsStore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		96A30957E21DBB5BB7019D9C0C30B658 /* UserDefaultsStore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UserDefaultsStore-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A77A3737670F47CC82BAA878074E32D5 /* Pods-Adventures WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Adventures WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
-		ADB8DC561DF0DAD4A118E7DF04E6A1E2 /* Pods-Adventures.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Adventures.debug.xcconfig"; sourceTree = "<group>"; };
-		AF24CB0F82C1C7C3A32586086A0B7C7A /* Pods-Adventures WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Adventures WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D0FE3E7FA6C1E178CD3919C619DF1A62 /* Pods-Adventures WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Adventures WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
-		E1D343746A113A646E80A237822C64BB /* Pods-Adventures WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Adventures WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
-		EAD24411528D340B85B0F7D7FF393AA2 /* Pods-Adventures WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Adventures WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
-		EEC8FAA30E62B3F0BAA568EEC2BB6A49 /* Pods-Adventures WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Adventures WatchKit App-dummy.m"; sourceTree = "<group>"; };
+		BAEF1DB2BDDD7579B6B560F4148C32EA /* Pods-Adventures WatchKit Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Adventures WatchKit Extension-umbrella.h"; sourceTree = "<group>"; };
+		C366A8A52349C4A2AE946704705567B2 /* UserDefaultsStore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UserDefaultsStore.xcconfig; sourceTree = "<group>"; };
+		C7AEB5A35D61F6A17761CFE42D2F95B7 /* Pods-Adventures WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Adventures WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		D473287C361B202D58C18F81D3311F41 /* Pods-Adventures WatchKit App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Adventures WatchKit App.modulemap"; sourceTree = "<group>"; };
+		D98D0651DAC1BD59D05F9A60022FA3C4 /* Pods-Adventures WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Adventures WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
+		DED216A07F187056A26561170849B039 /* Pods-Adventures WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Adventures WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		E2E833284706B9992406ED830929E1BD /* Pods-Adventures.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Adventures.release.xcconfig"; sourceTree = "<group>"; };
+		E477F1663052F424279F90AEA1E2A149 /* Pods-Adventures WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Adventures WatchKit App-dummy.m"; sourceTree = "<group>"; };
+		EF266EA0465298693A7D68196D4F2F13 /* UserDefaultsStore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = UserDefaultsStore.modulemap; sourceTree = "<group>"; };
+		F1DDBEC43A2925448292EA19D95FC3D7 /* Pods-Adventures.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Adventures.debug.xcconfig"; sourceTree = "<group>"; };
 		F977711B73529987954EA8DAA111B85E /* libPods-Adventures WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Adventures WatchKit App.a"; path = "libPods-Adventures WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC7629006B612B6AD632B3A86C1D1B99 /* Pods-Adventures WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Adventures WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
-		FEA7B0B23459F0C51433D5D0EC2B79C2 /* Pods-Adventures WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Adventures WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
+		FD6A12DDAAAAD00BBD16D81D7DC6E0E3 /* Pods-Adventures WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Adventures WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		002BF4591FDDFCC60004E4B407944FF8 /* Frameworks */ = {
+		50F9F466AC5C35282B76293057FA1F95 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1B69BDA3640F7B885F70C59874300FD0 /* Frameworks */ = {
+		78FED2BDDAD150977AB621870A4E87B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		949F415362611454254A2443E10C901B /* Frameworks */ = {
+		AE3E1B0952654162B8B8F114D69D8A53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9DA65F97CB525539B4700E77CBA1D43 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -59,50 +113,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		254A0D42334FB231EAAC4BE0555CEDEC /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9A3E5CF641B4AB6E57B0748267B199FA /* Pods-Adventures */,
-				FD56FBA3573D576798BD73F2ED5AB0E3 /* Pods-Adventures WatchKit App */,
-				CE32A7C37473DCE46916264CA168E04B /* Pods-Adventures WatchKit Extension */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		299D497B5FFA6BF0EA2E7765F20AAAC1 /* Products */ = {
+		0B124918EAD24D6D333732D1A50DD6F7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				7F42A88B371B67E643D71A63A5FD7D70 /* libPods-Adventures.a */,
 				F977711B73529987954EA8DAA111B85E /* libPods-Adventures WatchKit App.a */,
 				03EF0905F4C735BAAF5C6A8B56E2B0F9 /* libPods-Adventures WatchKit Extension.a */,
+				964E010B518237150639E88AC0D7BB7A /* libUserDefaultsStore.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9A3E5CF641B4AB6E57B0748267B199FA /* Pods-Adventures */ = {
+		68B0248FB852AB9DE3B95691387744AB /* Pods-Adventures WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				30A1FB8420A3A68553376944242DDA24 /* Pods-Adventures-acknowledgements.markdown */,
-				3A4F85299687892B308EF504D62C80B0 /* Pods-Adventures-acknowledgements.plist */,
-				593106C0637CAA08621ED25DC143C4C9 /* Pods-Adventures-dummy.m */,
-				ADB8DC561DF0DAD4A118E7DF04E6A1E2 /* Pods-Adventures.debug.xcconfig */,
-				2453D5C7D33CCCCC6F424185C5924E15 /* Pods-Adventures.release.xcconfig */,
-			);
-			name = "Pods-Adventures";
-			path = "Target Support Files/Pods-Adventures";
-			sourceTree = "<group>";
-		};
-		CE32A7C37473DCE46916264CA168E04B /* Pods-Adventures WatchKit Extension */ = {
-			isa = PBXGroup;
-			children = (
-				407BE2B040C088B719C7726509F7849A /* Pods-Adventures WatchKit Extension-acknowledgements.markdown */,
-				A77A3737670F47CC82BAA878074E32D5 /* Pods-Adventures WatchKit Extension-acknowledgements.plist */,
-				FC7629006B612B6AD632B3A86C1D1B99 /* Pods-Adventures WatchKit Extension-dummy.m */,
-				E1D343746A113A646E80A237822C64BB /* Pods-Adventures WatchKit Extension.debug.xcconfig */,
-				EAD24411528D340B85B0F7D7FF393AA2 /* Pods-Adventures WatchKit Extension.release.xcconfig */,
+				92923087A435C7561D0315202079E1CE /* Pods-Adventures WatchKit Extension.modulemap */,
+				1C4008737E877AF6EC6F7397FA8110BB /* Pods-Adventures WatchKit Extension-acknowledgements.markdown */,
+				4DD99A82BA87ABF9D23C6953298C163F /* Pods-Adventures WatchKit Extension-acknowledgements.plist */,
+				D98D0651DAC1BD59D05F9A60022FA3C4 /* Pods-Adventures WatchKit Extension-dummy.m */,
+				BAEF1DB2BDDD7579B6B560F4148C32EA /* Pods-Adventures WatchKit Extension-umbrella.h */,
+				4358029AE2C20048E4314B28EAA9795A /* Pods-Adventures WatchKit Extension.debug.xcconfig */,
+				DED216A07F187056A26561170849B039 /* Pods-Adventures WatchKit Extension.release.xcconfig */,
 			);
 			name = "Pods-Adventures WatchKit Extension";
 			path = "Target Support Files/Pods-Adventures WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		796C72E0E5EFC57FD662EC08C662584C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4DAC23B3B40394A643E58B709E77F99 /* Pods-Adventures */,
+				F1F440F29BEC707C2A03D2B92278487C /* Pods-Adventures WatchKit App */,
+				68B0248FB852AB9DE3B95691387744AB /* Pods-Adventures WatchKit Extension */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		86D806FC694649C8AB54455FCD0464F9 /* UserDefaultsStore */ = {
+			isa = PBXGroup;
+			children = (
+				13B733318EFBE106C2462B42456F544A /* Identifiable.swift */,
+				16D3C3B1C4DD1BE65BC08DCFA45D7225 /* SingleUserDefaultsStore.swift */,
+				0F0D9FDE608349F63A4E23752B5DF7C1 /* UserDefaultsStore.swift */,
+				EF1BA6E9D53ED53B3A290254C89742BC /* Support Files */,
+			);
+			name = UserDefaultsStore;
+			path = UserDefaultsStore;
+			sourceTree = "<group>";
+		};
+		C4FB37FEFFC1D5E9919F43E620A92E09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86D806FC694649C8AB54455FCD0464F9 /* UserDefaultsStore */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -110,8 +174,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
-				299D497B5FFA6BF0EA2E7765F20AAAC1 /* Products */,
-				254A0D42334FB231EAAC4BE0555CEDEC /* Targets Support Files */,
+				C4FB37FEFFC1D5E9919F43E620A92E09 /* Pods */,
+				0B124918EAD24D6D333732D1A50DD6F7 /* Products */,
+				796C72E0E5EFC57FD662EC08C662584C /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,57 +187,117 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FD56FBA3573D576798BD73F2ED5AB0E3 /* Pods-Adventures WatchKit App */ = {
+		EF1BA6E9D53ED53B3A290254C89742BC /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AF24CB0F82C1C7C3A32586086A0B7C7A /* Pods-Adventures WatchKit App-acknowledgements.markdown */,
-				FEA7B0B23459F0C51433D5D0EC2B79C2 /* Pods-Adventures WatchKit App-acknowledgements.plist */,
-				EEC8FAA30E62B3F0BAA568EEC2BB6A49 /* Pods-Adventures WatchKit App-dummy.m */,
-				D0FE3E7FA6C1E178CD3919C619DF1A62 /* Pods-Adventures WatchKit App.debug.xcconfig */,
-				6E8DE86D8F2D221AA4075FE6EF0BEE66 /* Pods-Adventures WatchKit App.release.xcconfig */,
+				EF266EA0465298693A7D68196D4F2F13 /* UserDefaultsStore.modulemap */,
+				C366A8A52349C4A2AE946704705567B2 /* UserDefaultsStore.xcconfig */,
+				96A30957E21DBB5BB7019D9C0C30B658 /* UserDefaultsStore-dummy.m */,
+				043715F020E8DB5EEC0676F4217A4C20 /* UserDefaultsStore-prefix.pch */,
+				7AB15FD28B5645FAD471CE0CAD1F5734 /* UserDefaultsStore-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UserDefaultsStore";
+			sourceTree = "<group>";
+		};
+		F1F440F29BEC707C2A03D2B92278487C /* Pods-Adventures WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D473287C361B202D58C18F81D3311F41 /* Pods-Adventures WatchKit App.modulemap */,
+				FD6A12DDAAAAD00BBD16D81D7DC6E0E3 /* Pods-Adventures WatchKit App-acknowledgements.markdown */,
+				193066F5F7D47710BCAB8E7DE57C88DF /* Pods-Adventures WatchKit App-acknowledgements.plist */,
+				E477F1663052F424279F90AEA1E2A149 /* Pods-Adventures WatchKit App-dummy.m */,
+				1666142EC97E760A4C277A51C4492BB7 /* Pods-Adventures WatchKit App-umbrella.h */,
+				C7AEB5A35D61F6A17761CFE42D2F95B7 /* Pods-Adventures WatchKit App.debug.xcconfig */,
+				8F196B1BAD51B916A4607917E4B768E4 /* Pods-Adventures WatchKit App.release.xcconfig */,
 			);
 			name = "Pods-Adventures WatchKit App";
 			path = "Target Support Files/Pods-Adventures WatchKit App";
 			sourceTree = "<group>";
 		};
+		F4DAC23B3B40394A643E58B709E77F99 /* Pods-Adventures */ = {
+			isa = PBXGroup;
+			children = (
+				6E009342F2B3892BFBF15F42BAC69EAE /* Pods-Adventures.modulemap */,
+				6AE836BB30B6F13D863E70955A37AF69 /* Pods-Adventures-acknowledgements.markdown */,
+				25EC44E7438DC6301131DC8A28F3FC0F /* Pods-Adventures-acknowledgements.plist */,
+				65D3EDE1985A7CD955D23E69FD436C4C /* Pods-Adventures-dummy.m */,
+				0569AE5FA360500AF03F3354349984C6 /* Pods-Adventures-umbrella.h */,
+				F1DDBEC43A2925448292EA19D95FC3D7 /* Pods-Adventures.debug.xcconfig */,
+				E2E833284706B9992406ED830929E1BD /* Pods-Adventures.release.xcconfig */,
+			);
+			name = "Pods-Adventures";
+			path = "Target Support Files/Pods-Adventures";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		C8AD8604545C5C4C02E88EBB2F051A84 /* Headers */ = {
+		842D5F05A5E2AB5558FC24BB24C7484F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BE2FCB45950C44352048A4A59A1A34F /* Pods-Adventures WatchKit Extension-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F32168CDC4C64FB055174FD31B9F803A /* Headers */ = {
+		A3991163F06A6C44155EA5D899CB729B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A14DEEB9B99481B951EEEF457C3D30A /* UserDefaultsStore-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3DF3D87AC265C1BE397641BCEFD5474 /* Headers */ = {
+		D5115DFF756E183140B73C55688EE106 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90C82B805FD484FBF93B8505C95332DF /* Pods-Adventures WatchKit App-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9553DE910F5336A345D497B06ED8D33 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				056FC99BA1100C6F0EAF791F1A2E9016 /* Pods-Adventures-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		49174602D618FA0037EB49396855FBBB /* Pods-Adventures */ = {
+		18BB9F72CD23264E98BCA91A99917C56 /* UserDefaultsStore */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5B7FB26F6477C1BD4F6E53504A543B98 /* Build configuration list for PBXNativeTarget "Pods-Adventures" */;
+			buildConfigurationList = D5D092D059A16BD6D51CC4B2E60141C6 /* Build configuration list for PBXNativeTarget "UserDefaultsStore" */;
 			buildPhases = (
-				C8AD8604545C5C4C02E88EBB2F051A84 /* Headers */,
-				1001056F3EF1BE34DD4E8A83A0A6656B /* Sources */,
-				002BF4591FDDFCC60004E4B407944FF8 /* Frameworks */,
+				A3991163F06A6C44155EA5D899CB729B /* Headers */,
+				821DD7DCEBB0DA6D9502CA07E9F9D1F1 /* Sources */,
+				AE3E1B0952654162B8B8F114D69D8A53 /* Frameworks */,
+				1B67488590314BB50904513158B2531B /* Copy generated compatibility header */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = UserDefaultsStore;
+			productName = UserDefaultsStore;
+			productReference = 964E010B518237150639E88AC0D7BB7A /* libUserDefaultsStore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		49174602D618FA0037EB49396855FBBB /* Pods-Adventures */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D0C7E64861E1902DBA9308434470EBF /* Build configuration list for PBXNativeTarget "Pods-Adventures" */;
+			buildPhases = (
+				E9553DE910F5336A345D497B06ED8D33 /* Headers */,
+				E5E3DE5AC2E2E05A14B67A474473B1AF /* Sources */,
+				C9DA65F97CB525539B4700E77CBA1D43 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3051F1D326E6B5BEC5C450774224EE5E /* PBXTargetDependency */,
 			);
 			name = "Pods-Adventures";
 			productName = "Pods-Adventures";
@@ -181,15 +306,16 @@
 		};
 		C6378BDC15C721FEACD948908E725C6F /* Pods-Adventures WatchKit Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC992BEAF6546E9F55B962BCDB18E19A /* Build configuration list for PBXNativeTarget "Pods-Adventures WatchKit Extension" */;
+			buildConfigurationList = B1CD0A18CB47B8F02A91BCF801D89D3B /* Build configuration list for PBXNativeTarget "Pods-Adventures WatchKit Extension" */;
 			buildPhases = (
-				F32168CDC4C64FB055174FD31B9F803A /* Headers */,
-				86F5CA4D8A543F24211BDACA7D5674C7 /* Sources */,
-				1B69BDA3640F7B885F70C59874300FD0 /* Frameworks */,
+				842D5F05A5E2AB5558FC24BB24C7484F /* Headers */,
+				0F463C3B2E7096F7401D7EA97B4A647B /* Sources */,
+				50F9F466AC5C35282B76293057FA1F95 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7DA810F4486F95075990CE13FC0CA7BF /* PBXTargetDependency */,
 			);
 			name = "Pods-Adventures WatchKit Extension";
 			productName = "Pods-Adventures WatchKit Extension";
@@ -198,15 +324,16 @@
 		};
 		E7465D93268ADC339D9972155FCFFF45 /* Pods-Adventures WatchKit App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66A5A5326F8BA79EA419ED531DF486C2 /* Build configuration list for PBXNativeTarget "Pods-Adventures WatchKit App" */;
+			buildConfigurationList = A293D4DD3CAE307939ADC7F663FDA775 /* Build configuration list for PBXNativeTarget "Pods-Adventures WatchKit App" */;
 			buildPhases = (
-				F3DF3D87AC265C1BE397641BCEFD5474 /* Headers */,
-				A214A48BC589591A5D26D88666FC1B5A /* Sources */,
-				949F415362611454254A2443E10C901B /* Frameworks */,
+				D5115DFF756E183140B73C55688EE106 /* Headers */,
+				E459CAE2F804FA3A804664C2D10CD10F /* Sources */,
+				78FED2BDDAD150977AB621870A4E87B4 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4E67572FE9C3AE638DB03D970CD56FC2 /* PBXTargetDependency */,
 			);
 			name = "Pods-Adventures WatchKit App";
 			productName = "Pods-Adventures WatchKit App";
@@ -231,46 +358,210 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 299D497B5FFA6BF0EA2E7765F20AAAC1 /* Products */;
+			productRefGroup = 0B124918EAD24D6D333732D1A50DD6F7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				49174602D618FA0037EB49396855FBBB /* Pods-Adventures */,
 				E7465D93268ADC339D9972155FCFFF45 /* Pods-Adventures WatchKit App */,
 				C6378BDC15C721FEACD948908E725C6F /* Pods-Adventures WatchKit Extension */,
+				18BB9F72CD23264E98BCA91A99917C56 /* UserDefaultsStore */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B67488590314BB50904513158B2531B /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/UserDefaultsStore/UserDefaultsStore.modulemap",
+				"${PODS_ROOT}/Headers/Public/UserDefaultsStore/UserDefaultsStore-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/UserDefaultsStore-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/UserDefaultsStore/UserDefaultsStore.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/UserDefaultsStore/UserDefaultsStore-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		1001056F3EF1BE34DD4E8A83A0A6656B /* Sources */ = {
+		0F463C3B2E7096F7401D7EA97B4A647B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03EC260D65856E7451C9F8881681C61F /* Pods-Adventures-dummy.m in Sources */,
+				1B0AC8EF66F36B00BE986884AB376873 /* Pods-Adventures WatchKit Extension-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		86F5CA4D8A543F24211BDACA7D5674C7 /* Sources */ = {
+		821DD7DCEBB0DA6D9502CA07E9F9D1F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D02A1B92EA47B508E11B219AF4570DC9 /* Pods-Adventures WatchKit Extension-dummy.m in Sources */,
+				862C2743E3AD9A4EDA88BA9F10EC52B8 /* Identifiable.swift in Sources */,
+				7061064909FAD96DA65162552E4B6765 /* SingleUserDefaultsStore.swift in Sources */,
+				65CFBD1B94BE45D2AAE2EBD119B999B4 /* UserDefaultsStore-dummy.m in Sources */,
+				633D9C96DF77DD7A95084AA24D600B7E /* UserDefaultsStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A214A48BC589591A5D26D88666FC1B5A /* Sources */ = {
+		E459CAE2F804FA3A804664C2D10CD10F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F964B36F7E1275AF2EC64C67E1FF722B /* Pods-Adventures WatchKit App-dummy.m in Sources */,
+				B54688FD10073B14B4BA05E6F6C13327 /* Pods-Adventures WatchKit App-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5E3DE5AC2E2E05A14B67A474473B1AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5624B5F239EB763F310343CE754469 /* Pods-Adventures-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		3051F1D326E6B5BEC5C450774224EE5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UserDefaultsStore;
+			target = 18BB9F72CD23264E98BCA91A99917C56 /* UserDefaultsStore */;
+			targetProxy = B08F391801855D18804B494381A48E10 /* PBXContainerItemProxy */;
+		};
+		4E67572FE9C3AE638DB03D970CD56FC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UserDefaultsStore;
+			target = 18BB9F72CD23264E98BCA91A99917C56 /* UserDefaultsStore */;
+			targetProxy = BF4004B5C6EC9361A307D7430D5FDF98 /* PBXContainerItemProxy */;
+		};
+		7DA810F4486F95075990CE13FC0CA7BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UserDefaultsStore;
+			target = 18BB9F72CD23264E98BCA91A99917C56 /* UserDefaultsStore */;
+			targetProxy = 3E264B2600E77DA106CE0FA297AEF9BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		175A473F48F5307264B842F838329EA5 /* Debug */ = {
+		2A12DEF637C25A26881ADF231E2E237D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DED216A07F187056A26561170849B039 /* Pods-Adventures WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Adventures WatchKit Extension/Pods-Adventures WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		83F2D88216AB1868D77AFAE9F03893B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		8503328CCE830447C4C7F47E2E4680D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2E833284706B9992406ED830929E1BD /* Pods-Adventures.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Adventures/Pods-Adventures.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		856B13DD40A699040C177D9394BC41DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -321,7 +612,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = "";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -331,233 +621,188 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
-		9C7624EB5C5948848E1A9E6E10343CAC /* Release */ = {
+		86904659EE65775D0968B032A1EE6B13 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EAD24411528D340B85B0F7D7FF393AA2 /* Pods-Adventures WatchKit Extension.release.xcconfig */;
+			baseConfigurationReference = C366A8A52349C4A2AE946704705567B2 /* UserDefaultsStore.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				MACH_O_TYPE = staticlib;
+				GCC_PREFIX_HEADER = "Target Support Files/UserDefaultsStore/UserDefaultsStore-prefix.pch";
+				MODULEMAP_FILE = Headers/Public/UserDefaultsStore/UserDefaultsStore.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = UserDefaultsStore;
+				PRODUCT_NAME = UserDefaultsStore;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 6.1;
-			};
-			name = Release;
-		};
-		AA9E12D616279AEF082C85CF6546E453 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0FE3E7FA6C1E178CD3919C619DF1A62 /* Pods-Adventures WatchKit App.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.1;
-			};
-			name = Debug;
-		};
-		BDC1F22D614AECEC315D37E68F1AB8C0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E8DE86D8F2D221AA4075FE6EF0BEE66 /* Pods-Adventures WatchKit App.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 6.1;
-			};
-			name = Release;
-		};
-		C4FC172501660AF0F3370B1322893475 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADB8DC561DF0DAD4A118E7DF04E6A1E2 /* Pods-Adventures.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = "";
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		C74F3C49559D3DFD78CC9153A353A22A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1D343746A113A646E80A237822C64BB /* Pods-Adventures WatchKit Extension.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.1;
-			};
-			name = Debug;
-		};
-		D0B3115B51B2769B4C0F74D7A66A2436 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = "";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
-			name = Release;
+			name = Debug;
 		};
-		D804905CD21F08DEFC2E5789784C9E31 /* Release */ = {
+		87BE6B616C52AF7DACD159E08BCABFB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2453D5C7D33CCCCC6F424185C5924E15 /* Pods-Adventures.release.xcconfig */;
+			baseConfigurationReference = F1DDBEC43A2925448292EA19D95FC3D7 /* Pods-Adventures.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = "";
 				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Adventures/Pods-Adventures.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		8965F4CAEB9EF8187D86012D25F35789 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C366A8A52349C4A2AE946704705567B2 /* UserDefaultsStore.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/UserDefaultsStore/UserDefaultsStore-prefix.pch";
+				MODULEMAP_FILE = Headers/Public/UserDefaultsStore/UserDefaultsStore.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = UserDefaultsStore;
+				PRODUCT_NAME = UserDefaultsStore;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
+		};
+		9B50E188018EAD8633EF8349C8CD1D7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F196B1BAD51B916A4607917E4B768E4 /* Pods-Adventures WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Adventures WatchKit App/Pods-Adventures WatchKit App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		BC0382CFA511D632F2699938B77533FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7AEB5A35D61F6A17761CFE42D2F95B7 /* Pods-Adventures WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Adventures WatchKit App/Pods-Adventures WatchKit App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		DD3CC831D1CFE708D8F86DB551715632 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4358029AE2C20048E4314B28EAA9795A /* Pods-Adventures WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Adventures WatchKit Extension/Pods-Adventures WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2D0C7E64861E1902DBA9308434470EBF /* Build configuration list for PBXNativeTarget "Pods-Adventures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87BE6B616C52AF7DACD159E08BCABFB1 /* Debug */,
+				8503328CCE830447C4C7F47E2E4680D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				175A473F48F5307264B842F838329EA5 /* Debug */,
-				D0B3115B51B2769B4C0F74D7A66A2436 /* Release */,
+				856B13DD40A699040C177D9394BC41DC /* Debug */,
+				83F2D88216AB1868D77AFAE9F03893B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B7FB26F6477C1BD4F6E53504A543B98 /* Build configuration list for PBXNativeTarget "Pods-Adventures" */ = {
+		A293D4DD3CAE307939ADC7F663FDA775 /* Build configuration list for PBXNativeTarget "Pods-Adventures WatchKit App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C4FC172501660AF0F3370B1322893475 /* Debug */,
-				D804905CD21F08DEFC2E5789784C9E31 /* Release */,
+				BC0382CFA511D632F2699938B77533FB /* Debug */,
+				9B50E188018EAD8633EF8349C8CD1D7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66A5A5326F8BA79EA419ED531DF486C2 /* Build configuration list for PBXNativeTarget "Pods-Adventures WatchKit App" */ = {
+		B1CD0A18CB47B8F02A91BCF801D89D3B /* Build configuration list for PBXNativeTarget "Pods-Adventures WatchKit Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AA9E12D616279AEF082C85CF6546E453 /* Debug */,
-				BDC1F22D614AECEC315D37E68F1AB8C0 /* Release */,
+				DD3CC831D1CFE708D8F86DB551715632 /* Debug */,
+				2A12DEF637C25A26881ADF231E2E237D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC992BEAF6546E9F55B962BCDB18E19A /* Build configuration list for PBXNativeTarget "Pods-Adventures WatchKit Extension" */ = {
+		D5D092D059A16BD6D51CC4B2E60141C6 /* Build configuration list for PBXNativeTarget "UserDefaultsStore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C74F3C49559D3DFD78CC9153A353A22A /* Debug */,
-				9C7624EB5C5948848E1A9E6E10343CAC /* Release */,
+				86904659EE65775D0968B032A1EE6B13 /* Debug */,
+				8965F4CAEB9EF8187D86012D25F35789 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

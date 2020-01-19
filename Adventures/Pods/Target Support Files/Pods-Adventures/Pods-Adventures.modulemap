@@ -1,0 +1,6 @@
+module Pods_Adventures {
+  umbrella header "Pods-Adventures-umbrella.h"
+
+  export *
+  module * { export * }
+}

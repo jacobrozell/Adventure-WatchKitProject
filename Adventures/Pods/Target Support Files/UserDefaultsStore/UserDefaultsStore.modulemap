@@ -1,0 +1,6 @@
+module UserDefaultsStore {
+  umbrella header "UserDefaultsStore-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -8,6 +8,7 @@
 
 import UIKit
 import WatchKit
+import HealthKit
 
 class Daily: WKInterfaceController {
 

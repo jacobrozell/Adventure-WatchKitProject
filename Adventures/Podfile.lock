@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: ffdd372f5e23f53404bf692c1d0b90df0ee2b830
+PODS:
+  - UserDefaultsStore (1.4.3)
+
+DEPENDENCIES:
+  - UserDefaultsStore
+
+SPEC REPOS:
+  trunk:
+    - UserDefaultsStore
+
+SPEC CHECKSUMS:
+  UserDefaultsStore: 833be1631cd7030329b08390fbad715b708b992a
+
+PODFILE CHECKSUM: 5c53a58f5639b3b32167305a8ece45c5fddb7b79
 
 COCOAPODS: 1.8.4
