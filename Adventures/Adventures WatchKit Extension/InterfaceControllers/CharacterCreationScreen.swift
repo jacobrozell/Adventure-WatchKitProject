@@ -23,26 +23,14 @@ class CharacterCreationScreen: WKInterfaceController {
     func chooseClass(with pClass: PlayableClass) {
         self.presentAlert(withTitle: "\(pClass.rawValue.capitalized) Selected!", message: "Are you sure?", preferredStyle: .alert, actions: [WKAlertAction(title: "Yes", style: .default, handler: {
             
-            PlayerStats.__playerClass = pClass
-            //GameConfig.userDefaults.setPlayerClass(to: pClass)
-            PlayerStats.__chosenClass = true
+            GameConfig.playerStats.__playerClass = pClass
+            GameConfig.playerStats.__chosenClass = true
+            GameConfig.defaults.store(GameConfig.playerStats, forKey: UserDefaultsKeys.playerClass)
             
             Navigation.navigate(to: Navigation.homeID, from: self, shouldChangeRoot: true)
             
         }), WKAlertAction(title: "No", style: .cancel, handler: {
             return
         })])
-    }
-    
-    override func awake(withContext context: Any?) {
-        super.awake(withContext: context)
-    }
-    
-    override func willActivate() {
-        super.willActivate()
-    }
-    
-    override func didDeactivate() {
-        super.didDeactivate()
     }
 }

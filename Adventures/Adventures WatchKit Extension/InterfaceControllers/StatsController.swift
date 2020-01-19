@@ -20,8 +20,8 @@ class StatsController: WKInterfaceController {
         super.awake(withContext: nil)
         
         classLabel.setText(GameConfig.playerClassName)
-        expLabel.setText("\(PlayerStats.__playerExp)")
-        factionPoints.setText("\(PlayerStats.__playerFactionPoints)")
-        moneyLabel.setText("$ \(PlayerStats.__playerMoney)")
+        expLabel.setText("\(GameConfig.playerStats.__playerExp)")
+        factionPoints.setText("\(GameConfig.playerStats.__playerFactionPoints)")
+        moneyLabel.setText("$ \(GameConfig.playerStats.__playerMoney)")
     }
 }

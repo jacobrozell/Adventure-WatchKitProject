@@ -10,25 +10,10 @@ import Foundation
 import WatchKit
 import UIKit
 
-// MARK: - Player Class Constants
-enum PlayableClass: String, Codable {
-    case mage = "mage"
-    case warrior = "warrior"
-    case unset = "unset"
-}
-
-struct PlayerStats: Codable {
-    public static var __chosenClass = false
-    public static var __playerClass: PlayableClass = .unset
-    public static var __playerRewardsForAdventure: [Reward] = []
-    public static var __playerLevel = 1
-    public static var __playerMoney = 0
-    public static var __playerExp = 0.0
-    public static var __playerFactionPoints = 0
-}
-
 enum GameConfig {
-    static var playerClassName = "\(PlayerStats.__playerClass.rawValue.capitalized)"
+    static var defaults = UserDefaults.standard.df
+    static var playerStats = PlayerStats()
+    static var playerClassName = "\(GameConfig.playerStats.__playerClass.rawValue.capitalized)"
     
     public static var userDefaults = UserDefaults.standard
     

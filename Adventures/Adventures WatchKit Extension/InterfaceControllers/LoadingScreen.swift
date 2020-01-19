@@ -13,31 +13,35 @@ import WatchKit
 class LoadingScreen: WKInterfaceController {
     
     var screenFeed: ScreenFeed? = nil
-
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         downloadFeed()
     }
-
+    
     func downloadFeed() {
-        let data = readJSONFromFile(fileName: "introFeed")
-        self.screenFeed = ScreenParser().parseObjectOfScreenFeedFromData(data)
-        self.checkDownload()
-//        let url = URL(string: GameConfig.introFeed)
-//
-//        let session = URLSession.shared.dataTask(with: url!, completionHandler : { (data, response, error) -> Void in
-//
-//            if error != nil {
-//                print(String(describing: error?.localizedDescription))
-//                return
-//            }
-//
-//            guard let data = data else { return }
-//
-//            self.screenFeed = ScreenParser().parseObjectOfScreenFeedFromData(data)
-//            self.checkDownload()
-//        })
-//        session.resume()
+        let useLocal = true
+        if useLocal {
+            let data = readJSONFromFile(fileName: "introFeed")
+            self.screenFeed = ScreenParser().parseObjectOfScreenFeedFromData(data)
+            self.checkDownload()
+        } else {
+            let url = URL(string: GameConfig.introFeed)
+            
+            let session = URLSession.shared.dataTask(with: url!, completionHandler : { (data, response, error) -> Void in
+                
+                if error != nil {
+                    print(String(describing: error?.localizedDescription))
+                    return
+                }
+                
+                guard let data = data else { return }
+                
+                self.screenFeed = ScreenParser().parseObjectOfScreenFeedFromData(data)
+                self.checkDownload()
+            })
+            session.resume()
+        }
     }
     
     func checkDownload() {
@@ -49,19 +53,13 @@ class LoadingScreen: WKInterfaceController {
         GameConfig.screenFeed = feed
         
         presentAlert(withTitle: "Download Data Complete!", message: "", preferredStyle: .alert, actions: [WKAlertAction(title: "Okay", style: .default, handler: {
-            
-            // TODO: NEED TO CONVERT THIS TO USERDEFAULTS
-            // #warning("Need the check this ")
-            
-//                if GameConfig.userDefaults.getPlayerClass() != nil {
-//
-//                }
-            
-            if !PlayerStats.__chosenClass {
-                Navigation.navigate(to: Navigation.classCreationID, from: self, shouldChangeRoot: true)
-                
+
+            if let p = GameConfig.defaults.fetch(forKey: UserDefaultsKeys.playerClass, type: PlayerStats.self) {
+                if !p.__chosenClass || p.__playerClass == .unset {
+                    Navigation.navigate(to: Navigation.homeID, from: self, shouldChangeRoot: true)
+                }
             } else {
-                Navigation.navigate(to: Navigation.homeID, from: self, shouldChangeRoot: true)
+                Navigation.navigate(to: Navigation.classCreationID, from: self, shouldChangeRoot: true)
             }
         })])
     }
