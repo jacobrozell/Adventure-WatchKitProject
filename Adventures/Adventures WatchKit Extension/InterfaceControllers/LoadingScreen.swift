@@ -55,7 +55,9 @@ class LoadingScreen: WKInterfaceController {
         presentAlert(withTitle: "Download Data Complete!", message: "", preferredStyle: .alert, actions: [WKAlertAction(title: "Okay", style: .default, handler: {
 
             if let p = GameConfig.defaults.fetch(forKey: UserDefaultsKeys.playerClass, type: PlayerStats.self) {
-                if !p.__chosenClass || p.__playerClass == .unset {
+                if p.__playerClass == .unset {
+                    Navigation.navigate(to: Navigation.classCreationID, from: self, shouldChangeRoot: true)
+                } else {
                     Navigation.navigate(to: Navigation.homeID, from: self, shouldChangeRoot: true)
                 }
             } else {
