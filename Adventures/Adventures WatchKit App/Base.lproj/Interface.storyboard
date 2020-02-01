@@ -81,6 +81,9 @@
                     <items>
                         <activity alignment="left" id="ABC-dI-bim"/>
                     </items>
+                    <connections>
+                        <outlet property="activityRing" destination="ABC-dI-bim" id="3zO-KI-gSe"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="-9" y="284"/>

@@ -9,25 +9,30 @@
 import Foundation
 import WatchKit
 import UIKit
+import HealthKit
 
 enum GameConfig {
     static var defaults = UserDefaults.standard.df
     static var playerStats = PlayerStats()
     static var playerClassName = "\(GameConfig.playerStats.__playerClass.rawValue.capitalized)"
     
-    public static var userDefaults = UserDefaults.standard
+    static var userDefaults = UserDefaults.standard
     
-    public static var screenFeed = ScreenFeed(screens: [])
+    static var screenFeed = ScreenFeed(screens: [])
     
-    public static var button1Link = -99
-    public static var button2Link = -99
-    public static var button3Link = -99
+    static var button1Link = -99
+    static var button2Link = -99
+    static var button3Link = -99
     
-    public static var rewards1: Reward = Reward()
-    public static var rewards2: Reward = Reward()
-    public static var rewards3: Reward = Reward()
+    static var rewards1: Reward = Reward()
+    static var rewards2: Reward = Reward()
+    static var rewards3: Reward = Reward()
     
     
+}
+enum HKConfig {
+    static let healthStore = HKHealthStore()
+    static var permission = false
 }
 
 enum UserDefaultsKeys {

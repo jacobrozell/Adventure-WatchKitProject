@@ -4,6 +4,10 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>Adventures will use your health information to reward you if you meet your goals.</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>Adventures will use your health information to reward you if you meet your goals.</string>
 	<key>CFBundleDisplayName</key>
 	<string>Avasia Adventures Extension</string>
 	<key>CFBundleExecutable</key>
