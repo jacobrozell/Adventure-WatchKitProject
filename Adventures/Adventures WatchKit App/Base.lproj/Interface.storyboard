@@ -80,6 +80,9 @@
                 <controller identifier="dailyTest" id="s7M-vh-iQh" customClass="Daily" customModule="Adventures_WatchKit_Extension">
                     <items>
                         <activity alignment="left" id="ABC-dI-bim"/>
+                        <label width="1" alignment="left" text="Daily Goal: Easy" textAlignment="left" id="JY9-vo-4yB">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </label>
                     </items>
                     <connections>
                         <outlet property="activityRing" destination="ABC-dI-bim" id="3zO-KI-gSe"/>

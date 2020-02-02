@@ -13,44 +13,24 @@ import HealthKit
 class Daily: WKInterfaceController {
     @IBOutlet var activityRing: WKInterfaceActivityRing!
     
-    let objectTypes: Set<HKObjectType> = [
-        HKObjectType.activitySummaryType()
-    ]
-    
     let energyUnit = HKUnit.jouleUnit(with: .kilo)//HKUnit.kilocalorie()
     let standUnit = HKUnit.count()
     let exerciseUnit = HKUnit.second()
-
+    
+    var energyProgress: Double = 0.0
+    var standProgress: Double = 0.0
+    var exerciseProgress: Double = 0.0
+    
     override init() {
         super.init()
         requestAccess()
-        
     }
     
-//    func checkAccess() {
-//        if HKConfig.permission {
-//            getCurrentDay()
-//        } else {
-//            let permission = requestAccess()
-//            if permission {
-//                HKConfig.permission = true
-//                getCurrentDay()
-//            } else {
-//                self.popToRootController()
-//            }
-//        }
-//    }
-    
-//    func checkAccess() {
-//        let permission = requestAccess()
-//        if permission {
-//            getCurrentDay()
-//        } else {
-//            popToRootController()
-//        }
-//    }
-    
     func requestAccess() {
+        let objectTypes: Set<HKObjectType> = [
+            HKObjectType.activitySummaryType()
+        ]
+        
         HKConfig.healthStore.requestAuthorization(toShare: nil, read: objectTypes) { (success, error) in
             if error != nil {
                 return
@@ -71,6 +51,7 @@ class Daily: WKInterfaceController {
         dateComponents.calendar = calendar
 
         let predicate = HKQuery.predicateForActivitySummary(with: dateComponents)
+        
         query(with: predicate)
     }
     
@@ -88,9 +69,9 @@ class Daily: WKInterfaceController {
             let standGoal = summary.appleStandHoursGoal.doubleValue(for: self.standUnit)
             let exerciseGoal = summary.appleExerciseTimeGoal.doubleValue(for: self.exerciseUnit)
             
-            let energyProgress = energyGoal == 0 ? 0 : energy / energyGoal
-            let standProgress = standGoal == 0 ? 0 : stand / standGoal
-            let exerciseProgress = exerciseGoal == 0 ? 0 : exercise / exerciseGoal
+            self.energyProgress = energyGoal == 0 ? 0 : energy / energyGoal
+            self.standProgress = standGoal == 0 ? 0 : stand / standGoal
+            self.exerciseProgress = exerciseGoal == 0 ? 0 : exercise / exerciseGoal
             
             self.activityRing.setActivitySummary(summary, animated: true)
         }
