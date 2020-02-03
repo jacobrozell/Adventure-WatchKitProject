@@ -21,8 +21,7 @@ class Daily: WKInterfaceController {
     var standProgress: Double = 0.0
     var exerciseProgress: Double = 0.0
     
-    override init() {
-        super.init()
+    override func didAppear() {
         requestAccess()
     }
     

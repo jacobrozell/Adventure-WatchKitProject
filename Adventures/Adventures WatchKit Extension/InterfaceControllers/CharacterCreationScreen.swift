@@ -11,6 +11,11 @@ import Foundation
 
 class CharacterCreationScreen: WKInterfaceController {
     
+    override init() {
+        super.init()
+        checkIfNewPlayer()
+    }
+    
     // MARK: - IBActions
     @IBAction func mageSelected(_ sender: Any) {
         chooseClass(with: .mage)
@@ -20,6 +25,7 @@ class CharacterCreationScreen: WKInterfaceController {
         chooseClass(with: .warrior)
     }
     
+    // MARK: - Functions
     func chooseClass(with pClass: PlayableClass) {
         self.presentAlert(withTitle: "\(pClass.rawValue.capitalized) Selected!", message: "Are you sure?", preferredStyle: .alert, actions: [WKAlertAction(title: "Yes", style: .default, handler: {
             
@@ -27,10 +33,29 @@ class CharacterCreationScreen: WKInterfaceController {
             GameConfig.playerStats.__chosenClass = true
             GameConfig.defaults.store(GameConfig.playerStats, forKey: UserDefaultsKeys.playerClass)
             
-            Navigation.navigate(to: Navigation.homeID, from: self, shouldChangeRoot: true)
+            Navigation.reloadPages()
+            
+//            Navigation.navigate(to: Navigation.homeID, from: self, shouldChangeRoot: true)
             
         }), WKAlertAction(title: "No", style: .cancel, handler: {
             return
         })])
+    }
+    
+    func checkIfNewPlayer() {
+//        if let p = GameConfig.defaults.fetch(forKey: UserDefaultsKeys.playerClass, type: PlayerStats.self) {
+//            if p.__playerClass == .unset || !p.__chosenClass {
+//                Navigation.navigate(to: Navigation.classCreationID, from: self, shouldChangeRoot: true)
+//            }
+//        } else {
+//            Navigation.navigate(to: Navigation.classCreationID, from: self, shouldChangeRoot: true)
+//
+//        }
+//
+        if let p = GameConfig.defaults.fetch(forKey: UserDefaultsKeys.playerClass, type: PlayerStats.self) {
+            if p.__playerClass != .unset || p.__chosenClass {
+                Navigation.reloadPages()
+            }
+        }
     }
 }

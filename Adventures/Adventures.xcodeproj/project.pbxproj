@@ -10,7 +10,7 @@
 		151EE19FF5C19E6F9A9526D1 /* libPods-Adventures.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C71EC4E8A92263BB3BA04A39 /* libPods-Adventures.a */; };
 		361606CC23C2DFF900D8AA20 /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D66B5F23B69DFE006CC1BB /* LoadingScreen.swift */; };
 		361606CE23C2E23800D8AA20 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361606CD23C2E23800D8AA20 /* HomeScreen.swift */; };
-		3622347223CCFF2800530607 /* StatsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622347123CCFF2800530607 /* StatsController.swift */; };
+		3622347223CCFF2800530607 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622347123CCFF2800530607 /* ProfileController.swift */; };
 		3622347423CD0D7F00530607 /* introFeed.json in Resources */ = {isa = PBXBuildFile; fileRef = 3622347323CD0D7F00530607 /* introFeed.json */; };
 		3630CECB23D7A2F500BEF170 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3630CECA23D7A2F500BEF170 /* HealthKit.framework */; };
 		3675E06723CF7DF900ACD78E /* RewardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3675E06623CF7DF900ACD78E /* RewardScreen.swift */; };
@@ -80,7 +80,7 @@
 		152A2BBB36C133AA0EC59CDC /* Pods-Adventures.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adventures.release.xcconfig"; path = "Target Support Files/Pods-Adventures/Pods-Adventures.release.xcconfig"; sourceTree = "<group>"; };
 		2E4785D0A71F5F4B8C72B0D3 /* libPods-Adventures WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Adventures WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		361606CD23C2E23800D8AA20 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
-		3622347123CCFF2800530607 /* StatsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsController.swift; sourceTree = "<group>"; };
+		3622347123CCFF2800530607 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		3622347323CD0D7F00530607 /* introFeed.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = introFeed.json; sourceTree = "<group>"; };
 		3630CEC923D7A2F500BEF170 /* Adventures WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Adventures WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		3630CECA23D7A2F500BEF170 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -210,7 +210,7 @@
 				36D66B6123B6A264006CC1BB /* CharacterCreationScreen.swift */,
 				3675E06823CF826600ACD78E /* AdventureScreen.swift */,
 				361606CD23C2E23800D8AA20 /* HomeScreen.swift */,
-				3622347123CCFF2800530607 /* StatsController.swift */,
+				3622347123CCFF2800530607 /* ProfileController.swift */,
 				3675E06623CF7DF900ACD78E /* RewardScreen.swift */,
 				36B5C62023D4CA4A00D9808E /* Daily.swift */,
 				36ABC36923E867E60064BC8A /* DailyPick.swift */,
@@ -449,7 +449,7 @@
 				3675E06923CF826600ACD78E /* AdventureScreen.swift in Sources */,
 				36D66B7223B94327006CC1BB /* Extensions.swift in Sources */,
 				36D66B4923B671F4006CC1BB /* ExtensionDelegate.swift in Sources */,
-				3622347223CCFF2800530607 /* StatsController.swift in Sources */,
+				3622347223CCFF2800530607 /* ProfileController.swift in Sources */,
 				36B5C62323D4DE1A00D9808E /* PlayerConfig.swift in Sources */,
 				3675E06723CF7DF900ACD78E /* RewardScreen.swift in Sources */,
 				36D66B7023B9426A006CC1BB /* ConfigFeeds.swift in Sources */,

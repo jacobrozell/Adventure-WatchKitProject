@@ -20,7 +20,9 @@ class LoadingScreen: WKInterfaceController {
     }
     
     func downloadFeed() {
+        #warning("Use Local should be somewhere else")
         let useLocal = true
+        
         if useLocal {
             let data = readJSONFromFile(fileName: "introFeed")
             self.screenFeed = ScreenParser().parseObjectOfScreenFeedFromData(data)
@@ -52,18 +54,10 @@ class LoadingScreen: WKInterfaceController {
         
         GameConfig.screenFeed = feed
         
-        presentAlert(withTitle: "Download Data Complete!", message: "", preferredStyle: .alert, actions: [WKAlertAction(title: "Okay", style: .default, handler: {
-
-            if let p = GameConfig.defaults.fetch(forKey: UserDefaultsKeys.playerClass, type: PlayerStats.self) {
-                if p.__playerClass == .unset {
-                    Navigation.navigate(to: Navigation.classCreationID, from: self, shouldChangeRoot: true)
-                } else {
-                    Navigation.navigate(to: Navigation.homeID, from: self, shouldChangeRoot: true)
-                }
-            } else {
-                Navigation.navigate(to: Navigation.classCreationID, from: self, shouldChangeRoot: true)
-            }
-        })])
+//        presentAlert(withTitle: "Download Data Complete!", message: "", preferredStyle: .alert, actions: [WKAlertAction(title: "Okay", style: .default, handler: {
+//            // Do something
+//            // Probably go to adventure mode
+//        })])
     }
     
     func presentDownloadError() {

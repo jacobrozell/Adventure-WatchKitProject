@@ -53,6 +53,10 @@ enum Navigation {
         }
         controller.pushController(withName: id, context: nil)
     }
+    
+    public static func reloadPages() {
+        WKInterfaceController.reloadRootPageControllers(withNames: [Navigation.profileID, Navigation.homeID, Navigation.dailyTestID], contexts: nil, orientation: .horizontal, pageIndex: 1)
+    }
 }
 
 func leaveAdventure(vc self: WKInterfaceController) {

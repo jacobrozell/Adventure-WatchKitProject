@@ -11,15 +11,30 @@ import WatchKit
 import Foundation
 
 class HomeScreen: WKInterfaceController {
+    
+    override func didAppear() {
+        checkIfNewPlayer()
+        
+        // Allows for ONE check, instead of several throughout the application 
+        if let p = GameConfig.defaults.fetch(forKey: UserDefaultsKeys.playerClass, type: PlayerStats.self) {
+            GameConfig.playerStats = p
+        }
+    }
+    
     @IBAction func adventuresPressed() {
+        // need to download data here
+        //LoadingScreen().downloadFeed()
         Navigation.navigate(to: Navigation.adventureID, from: self, shouldChangeRoot: true)
     }
     
-    @IBAction func profileButtonPressed() {
-        Navigation.navigate(to: Navigation.profileID, from: self)
-    }
-    
-    @IBAction func dailyPressed() {
-        Navigation.navigate(to: Navigation.dailyPickID, from: self)
+    func checkIfNewPlayer() {
+        if let p = GameConfig.defaults.fetch(forKey: UserDefaultsKeys.playerClass, type: PlayerStats.self) {
+            if p.__playerClass == .unset || !p.__chosenClass {
+                Navigation.navigate(to: Navigation.classCreationID, from: self, shouldChangeRoot: true)
+            }
+        } else {
+            Navigation.navigate(to: Navigation.classCreationID, from: self, shouldChangeRoot: true)
+        }
+        
     }
 }

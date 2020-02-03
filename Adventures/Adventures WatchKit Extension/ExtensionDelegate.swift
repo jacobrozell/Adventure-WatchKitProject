@@ -14,7 +14,9 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
     func applicationDidBecomeActive() {}
 
-    func applicationWillResignActive() {}
+    func applicationWillResignActive() {
+        GameConfig.defaults.store(GameConfig.playerStats, forKey: UserDefaultsKeys.playerClass)
+    }
 
     func handle(_ backgroundTasks: Set<WKRefreshBackgroundTask>) {
         for task in backgroundTasks {
