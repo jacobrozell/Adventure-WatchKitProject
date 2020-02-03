@@ -74,13 +74,55 @@
             </objects>
             <point key="canvasLocation" x="-3" y="-15"/>
         </scene>
+        <!--Daily Pick-->
+        <scene sceneID="cDl-sv-hvV">
+            <objects>
+                <controller id="xeL-ad-0xS" customClass="DailyPick" customModule="Adventures_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Welcome to Daily Task! " textAlignment="center" numberOfLines="0" id="csq-Mi-n1R">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <label width="1" alignment="left" text="You can choose between Easy, Medium, and Hard everyday. You will get rewarded, if and only if ,you complete your desired goal." textAlignment="left" numberOfLines="0" id="mAk-4U-Kb3">
+                            <fontDescription key="font" type="system" pointSize="18"/>
+                        </label>
+                        <button width="1" alignment="left" title="Easy (1 ring)" id="LHB-RG-Yvy">
+                            <connections>
+                                <action selector="easyPressed" destination="xeL-ad-0xS" id="tgy-wF-dg5"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Medium (2 rings)" id="6rI-bT-gmC">
+                            <connections>
+                                <action selector="mediumPressed" destination="xeL-ad-0xS" id="ahe-cj-OGo"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Hard (3 rings)" id="Qcq-kU-j1y">
+                            <connections>
+                                <action selector="hardPressed" destination="xeL-ad-0xS" id="nWh-W2-9T7"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-282" y="404"/>
+        </scene>
         <!--dailyTest-->
         <scene sceneID="nZn-yY-sj1">
             <objects>
                 <controller identifier="dailyTest" id="s7M-vh-iQh" customClass="Daily" customModule="Adventures_WatchKit_Extension">
                     <items>
-                        <activity alignment="left" id="ABC-dI-bim"/>
-                        <label width="1" alignment="left" text="Daily Goal: Easy" textAlignment="left" id="JY9-vo-4yB">
+                        <activity height="135" alignment="left" id="ABC-dI-bim"/>
+                        <separator alignment="left" id="K5n-d8-eG0"/>
+                        <label width="1" alignment="left" text="Daily Goal: Easy" textAlignment="center" id="JY9-vo-4yB">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </label>
+                        <separator alignment="left" id="4ps-6v-4l2"/>
+                        <label width="1" alignment="left" text="Move: 10%" textAlignment="left" id="zvW-DF-bKV">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </label>
+                        <label width="1" alignment="left" text="Excerise: 10%" textAlignment="left" numberOfLines="0" id="Ha5-1Y-wJB">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </label>
+                        <label width="1" alignment="left" text="Stand: 15%" textAlignment="left" id="zqo-c7-58h">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </label>
                     </items>
@@ -89,7 +131,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-9" y="284"/>
+            <point key="canvasLocation" x="-3" y="335"/>
         </scene>
         <!--Adventure-->
         <scene sceneID="Yyt-1l-hJF">

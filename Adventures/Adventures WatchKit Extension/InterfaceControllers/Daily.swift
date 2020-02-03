@@ -74,8 +74,15 @@ class Daily: WKInterfaceController {
             self.exerciseProgress = exerciseGoal == 0 ? 0 : exercise / exerciseGoal
             
             self.activityRing.setActivitySummary(summary, animated: true)
+            self.checkGoals()
         }
         HKConfig.healthStore.execute(query)
+    }
+    
+    func checkGoals() {
+        // check each goal and if it is 100% complete, add it to label
+        
+        
     }
     
 }
