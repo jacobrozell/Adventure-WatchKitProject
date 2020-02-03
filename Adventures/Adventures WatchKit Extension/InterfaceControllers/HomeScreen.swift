@@ -24,7 +24,8 @@ class HomeScreen: WKInterfaceController {
     @IBAction func adventuresPressed() {
         // need to download data here
         //LoadingScreen().downloadFeed()
-        Navigation.navigate(to: Navigation.adventureID, from: self, shouldChangeRoot: true)
+        pushController(withName: Navigation.loadingID, context: nil)
+        //Navigation.navigate(to: Navigation.adventureID, from: self, shouldChangeRoot: true)
     }
     
     func checkIfNewPlayer() {

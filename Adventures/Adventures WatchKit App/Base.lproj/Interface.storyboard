@@ -112,19 +112,38 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="320" y="92"/>
+            <point key="canvasLocation" x="-3" y="374"/>
         </scene>
-        <!--dailyTest-->
+        <!--dailyInfo-->
+        <scene sceneID="1V1-5c-QuD">
+            <objects>
+                <controller identifier="dailyInfo" id="1tq-Qc-2IK">
+                    <items>
+                        <label width="1" alignment="left" text="Choose between Easy, Medium, and Hard everyday. You will get rewarded based off the diffuculty, if you complete the goal. " textAlignment="center" numberOfLines="0" id="fWQ-jU-OCr">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                        </label>
+                        <label width="1" alignment="left" text="Good luck!" textAlignment="center" numberOfLines="0" id="i5l-b2-KzV">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="76" y="-340"/>
+        </scene>
+        <!--dailyView-->
         <scene sceneID="nZn-yY-sj1">
             <objects>
-                <controller identifier="dailyTest" id="s7M-vh-iQh" customClass="Daily" customModule="Adventures_WatchKit_Extension">
+                <controller identifier="dailyView" id="s7M-vh-iQh" customClass="Daily" customModule="Adventures_WatchKit_Extension">
                     <items>
                         <button alignment="right" id="e0U-S3-YBv">
-                            <group key="contentGroup" width="10" height="10" alignment="left" id="jEZ-LK-ZUD">
+                            <group key="contentGroup" width="15" height="15" alignment="left" id="jEZ-LK-ZUD">
                                 <items>
                                     <imageView alignment="left" image="info.circle" catalog="system" id="QKq-Xj-FAB"/>
                                 </items>
                             </group>
+                            <connections>
+                                <action selector="infoPressed" destination="s7M-vh-iQh" id="c3F-wO-rl4"/>
+                            </connections>
                         </button>
                         <activity height="135" alignment="left" id="ABC-dI-bim"/>
                         <separator alignment="left" id="K5n-d8-eG0"/>
@@ -147,7 +166,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="76" y="30"/>
+            <point key="canvasLocation" x="246" y="0.0"/>
         </scene>
         <!--Adventure-->
         <scene sceneID="Yyt-1l-hJF">
@@ -184,7 +203,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-234" y="609"/>
+            <point key="canvasLocation" x="-356" y="606"/>
         </scene>
         <!--Rewards-->
         <scene sceneID="khs-md-1fs">
@@ -266,10 +285,10 @@
             </objects>
             <point key="canvasLocation" x="-539" y="-20"/>
         </scene>
-        <!--Loading Screen-->
+        <!--loadingScreen-->
         <scene sceneID="wLn-Bw-3t4">
             <objects>
-                <controller id="Zi1-XJ-Adc" customClass="LoadingScreen" customModule="Adventures_WatchKit_Extension">
+                <controller identifier="loadingScreen" id="Zi1-XJ-Adc" customClass="LoadingScreen" customModule="Adventures_WatchKit_Extension">
                     <items>
                         <label width="1" alignment="left" text="Avasia: Adventures" textAlignment="center" numberOfLines="0" id="2Se-Ym-hOb"/>
                         <separator alignment="left" id="CDE-IQ-Xd8">
@@ -279,7 +298,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-234" y="299"/>
+            <point key="canvasLocation" x="-328" y="316"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

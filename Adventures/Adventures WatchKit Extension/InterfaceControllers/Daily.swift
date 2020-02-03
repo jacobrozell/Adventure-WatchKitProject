@@ -21,6 +21,11 @@ class Daily: WKInterfaceController {
     var standProgress: Double = 0.0
     var exerciseProgress: Double = 0.0
     
+    
+    @IBAction func infoPressed() {
+        pushController(withName: Navigation.dailyInfo, context: nil)
+    }
+    
     override func didAppear() {
         requestAccess()
     }

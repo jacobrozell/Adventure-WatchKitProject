@@ -16,6 +16,7 @@
 		3675E06723CF7DF900ACD78E /* RewardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3675E06623CF7DF900ACD78E /* RewardScreen.swift */; };
 		3675E06923CF826600ACD78E /* AdventureScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3675E06823CF826600ACD78E /* AdventureScreen.swift */; };
 		36ABC36A23E867E60064BC8A /* DailyPick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36ABC36923E867E60064BC8A /* DailyPick.swift */; };
+		36ABC36C23E8A2500064BC8A /* DailyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36ABC36B23E8A2500064BC8A /* DailyInfo.swift */; };
 		36B5C62123D4CA4A00D9808E /* Daily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B5C62023D4CA4A00D9808E /* Daily.swift */; };
 		36B5C62323D4DE1A00D9808E /* PlayerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B5C62223D4DE1A00D9808E /* PlayerConfig.swift */; };
 		36D66B3323B671F2006CC1BB /* Adventures WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 36D66B3223B671F2006CC1BB /* Adventures WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -87,6 +88,7 @@
 		3675E06623CF7DF900ACD78E /* RewardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardScreen.swift; sourceTree = "<group>"; };
 		3675E06823CF826600ACD78E /* AdventureScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdventureScreen.swift; sourceTree = "<group>"; };
 		36ABC36923E867E60064BC8A /* DailyPick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPick.swift; sourceTree = "<group>"; };
+		36ABC36B23E8A2500064BC8A /* DailyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyInfo.swift; sourceTree = "<group>"; };
 		36B5C62023D4CA4A00D9808E /* Daily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily.swift; sourceTree = "<group>"; };
 		36B5C62223D4DE1A00D9808E /* PlayerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerConfig.swift; sourceTree = "<group>"; };
 		36D66B2E23B671F1006CC1BB /* Adventures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adventures.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -214,6 +216,7 @@
 				3675E06623CF7DF900ACD78E /* RewardScreen.swift */,
 				36B5C62023D4CA4A00D9808E /* Daily.swift */,
 				36ABC36923E867E60064BC8A /* DailyPick.swift */,
+				36ABC36B23E8A2500064BC8A /* DailyInfo.swift */,
 			);
 			path = InterfaceControllers;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 				36B5C62323D4DE1A00D9808E /* PlayerConfig.swift in Sources */,
 				3675E06723CF7DF900ACD78E /* RewardScreen.swift in Sources */,
 				36D66B7023B9426A006CC1BB /* ConfigFeeds.swift in Sources */,
+				36ABC36C23E8A2500064BC8A /* DailyInfo.swift in Sources */,
 				36ABC36A23E867E60064BC8A /* DailyPick.swift in Sources */,
 				36D66B5E23B67890006CC1BB /* FeedModel.swift in Sources */,
 				36D66B6C23B939B6006CC1BB /* GameConfig.swift in Sources */,

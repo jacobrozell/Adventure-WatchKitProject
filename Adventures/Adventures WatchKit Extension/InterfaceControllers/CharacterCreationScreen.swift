@@ -35,23 +35,12 @@ class CharacterCreationScreen: WKInterfaceController {
             
             Navigation.reloadPages()
             
-//            Navigation.navigate(to: Navigation.homeID, from: self, shouldChangeRoot: true)
-            
         }), WKAlertAction(title: "No", style: .cancel, handler: {
             return
         })])
     }
     
     func checkIfNewPlayer() {
-//        if let p = GameConfig.defaults.fetch(forKey: UserDefaultsKeys.playerClass, type: PlayerStats.self) {
-//            if p.__playerClass == .unset || !p.__chosenClass {
-//                Navigation.navigate(to: Navigation.classCreationID, from: self, shouldChangeRoot: true)
-//            }
-//        } else {
-//            Navigation.navigate(to: Navigation.classCreationID, from: self, shouldChangeRoot: true)
-//
-//        }
-//
         if let p = GameConfig.defaults.fetch(forKey: UserDefaultsKeys.playerClass, type: PlayerStats.self) {
             if p.__playerClass != .unset || p.__chosenClass {
                 Navigation.reloadPages()

@@ -18,7 +18,7 @@ class RewardScreen: WKInterfaceController {
     
     // MARK: - IBActions
     @IBAction func goToHomeScreenPressed() {
-        Navigation.navigate(to: Navigation.homeID, from: self, shouldChangeRoot: true)
+        Navigation.reloadPages()
     }
     
     var expToGive = 0.0

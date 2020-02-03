@@ -53,11 +53,7 @@ class LoadingScreen: WKInterfaceController {
         }
         
         GameConfig.screenFeed = feed
-        
-//        presentAlert(withTitle: "Download Data Complete!", message: "", preferredStyle: .alert, actions: [WKAlertAction(title: "Okay", style: .default, handler: {
-//            // Do something
-//            // Probably go to adventure mode
-//        })])
+        Navigation.navigate(to: Navigation.adventureID, from: self, shouldChangeRoot: true)
     }
     
     func presentDownloadError() {

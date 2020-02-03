@@ -44,8 +44,10 @@ enum Navigation {
     public static var classCreationID = "characterCreationScreen"
     public static var adventureID = "screenViewController"
     public static var rewardID = "rewardScreen"
-    public static var dailyTestID  = "dailyTest"
+    public static var dailyTestID  = "dailyView"
     public static var dailyPickID = "dailyPick"
+    public static var loadingID = "loadingScreen"
+    public static var dailyInfo = "dailyInfo"
     
     public static func navigate(to id: String, from controller: WKInterfaceController, shouldChangeRoot: Bool=false) {
         if shouldChangeRoot {
