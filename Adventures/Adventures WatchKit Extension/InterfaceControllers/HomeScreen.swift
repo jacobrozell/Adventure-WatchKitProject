@@ -20,6 +20,6 @@ class HomeScreen: WKInterfaceController {
     }
     
     @IBAction func dailyPressed() {
-        Navigation.navigate(to: Navigation.dailyTestID, from: self)
+        Navigation.navigate(to: Navigation.dailyPickID, from: self)
     }
 }

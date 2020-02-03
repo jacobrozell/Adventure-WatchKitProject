@@ -27,9 +27,8 @@ enum GameConfig {
     static var rewards1: Reward = Reward()
     static var rewards2: Reward = Reward()
     static var rewards3: Reward = Reward()
-    
-    
 }
+
 enum HKConfig {
     static let healthStore = HKHealthStore()
     static var permission = false
@@ -47,7 +46,6 @@ enum Navigation {
     public static var rewardID = "rewardScreen"
     public static var dailyTestID  = "dailyTest"
     public static var dailyPickID = "dailyPick"
-
     
     public static func navigate(to id: String, from controller: WKInterfaceController, shouldChangeRoot: Bool=false) {
         if shouldChangeRoot {

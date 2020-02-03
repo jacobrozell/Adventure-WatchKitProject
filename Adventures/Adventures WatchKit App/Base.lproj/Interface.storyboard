@@ -74,15 +74,15 @@
             </objects>
             <point key="canvasLocation" x="-3" y="-15"/>
         </scene>
-        <!--Daily Pick-->
+        <!--dailyPick-->
         <scene sceneID="cDl-sv-hvV">
             <objects>
-                <controller id="xeL-ad-0xS" customClass="DailyPick" customModule="Adventures_WatchKit_Extension">
+                <controller identifier="dailyPick" id="xeL-ad-0xS" customClass="DailyPick" customModule="Adventures_WatchKit_Extension">
                     <items>
                         <label width="1" alignment="left" text="Welcome to Daily Task! " textAlignment="center" numberOfLines="0" id="csq-Mi-n1R">
                             <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
                         </label>
-                        <label width="1" alignment="left" text="You can choose between Easy, Medium, and Hard everyday. You will get rewarded, if and only if ,you complete your desired goal." textAlignment="left" numberOfLines="0" id="mAk-4U-Kb3">
+                        <label width="1" alignment="left" text="You can choose between Easy, Medium, and Hard everyday. You will get rewarded, if and only if ,you complete your desired goal." textAlignment="center" numberOfLines="0" id="mAk-4U-Kb3">
                             <fontDescription key="font" type="system" pointSize="18"/>
                         </label>
                         <button width="1" alignment="left" title="Easy (1 ring)" id="LHB-RG-Yvy">
@@ -110,6 +110,13 @@
             <objects>
                 <controller identifier="dailyTest" id="s7M-vh-iQh" customClass="Daily" customModule="Adventures_WatchKit_Extension">
                     <items>
+                        <button alignment="right" id="e0U-S3-YBv">
+                            <group key="contentGroup" width="10" height="10" alignment="left" id="jEZ-LK-ZUD">
+                                <items>
+                                    <imageView alignment="left" image="info.circle" catalog="system" id="QKq-Xj-FAB"/>
+                                </items>
+                            </group>
+                        </button>
                         <activity height="135" alignment="left" id="ABC-dI-bim"/>
                         <separator alignment="left" id="K5n-d8-eG0"/>
                         <label width="1" alignment="left" text="Daily Goal: Easy" textAlignment="center" id="JY9-vo-4yB">
@@ -298,6 +305,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="info.circle" catalog="system" width="64" height="60"/>
         <image name="knioght" width="241" height="209"/>
         <image name="mage?" width="206" height="184"/>
     </resources>

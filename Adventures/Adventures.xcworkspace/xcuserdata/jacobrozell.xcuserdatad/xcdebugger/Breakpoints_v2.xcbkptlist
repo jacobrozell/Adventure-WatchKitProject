@@ -20,34 +20,34 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "636A708E-5784-4684-BE92-B590218CC171 - 279f5ed78987f865"
+                  uuid = "636A708E-5784-4684-BE92-B590218CC171 - ea8b25066827a4b5"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Adventures_WatchKit_Extension.Daily.requestAccess() -&gt; Swift.Bool"
+                  symbolName = "Adventures_WatchKit_Extension.Daily.requestAccess() -&gt; ()"
                   moduleName = "Adventures WatchKit Extension"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jacobrozell/Desktop/Adventure-WatchKitProject/Adventures/Adventures%20WatchKit%20Extension/InterfaceControllers/Daily.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "55"
-                  endingLineNumber = "55"
-                  offsetFromSymbolStart = "82">
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "161">
                </Location>
                <Location
-                  uuid = "636A708E-5784-4684-BE92-B590218CC171 - 437dfc5ff029f05b"
+                  uuid = "636A708E-5784-4684-BE92-B590218CC171 - 242bbd2821c2ce15"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Adventures_WatchKit_Extension.Daily.requestAccess() -&gt; Swift.Bool"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Adventures_WatchKit_Extension.Daily.requestAccess() -&gt; ()"
                   moduleName = "Adventures WatchKit Extension"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jacobrozell/Desktop/Adventure-WatchKitProject/Adventures/Adventures%20WatchKit%20Extension/InterfaceControllers/Daily.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "54"
-                  endingLineNumber = "54"
-                  offsetFromSymbolStart = "49">
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "52">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -225,6 +225,22 @@
             startingLineNumber = "65"
             endingLineNumber = "65"
             landmarkName = "query(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7183CB94-788D-4118-8F0A-DB36C3D01074"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Adventures WatchKit Extension/InterfaceControllers/HomeScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "dailyPressed()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
